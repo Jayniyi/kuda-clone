@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Kuda | The Money App For Africa | Open An Account in Three Minutes
+  </title>
+  <!-- external css link  -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gluten&family=Kanit:wght@800&family=Nosifer&family=Oswald:wght@600&family=Playpen+Sans:wght@800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&family=Sedgwick+Ave+Display&family=Sriracha&display=swap"
+    rel="stylesheet" />
+  <!-- favicon icon  -->
+  <link rel="icon" type="image/favicon-16x16" href="./assets/img/favicon-16x16.png" />
+  <!-- preloads -->
+  <link rel="preload" as="file" href="./assets/css/style.css" />
+  <link rel="preload" as="file" href="./assets/js/app.js" />
+  <link rel="preload" as="image" href="./assets/img/kuda.gif" />
+  <link rel="preload" as="image" href="./assets/img/nigeria.png" />
+  <!-- font awesome link  -->
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet" />
+
+  <script src="https://kit.fontawesome.com/78efde65da.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- head section  -->
+  <header>
+    <nav class="navbar fordesktop">
+      <div class="nav-flex">
+        <div class="navbar-brand">
+          <img src="./assets/img/kuda_bank.svg" alt="Kuda Logo" class="company-logo" />
+        </div>
+
+        <div class="navbar-menu">
+          <div class="dropdown">
+            <button class="dropbtn">
+              Personal <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <div class="flexdrop">
+                <div class="dropdown-col">
+                  <a href=""><i class="fa-solid fa-house-chimney" id="blue"></i>
+                    Discover Personal</a>
+                  <a href=""><i class="fa-solid fa-location-arrow" id="green"></i>Transfer & Spend</a>
+                  <a href=""><i class="fa-solid fa-piggy-bank" id="yellow"></i>Save</a>
+                  <a href=""><i class="fa-solid fa-chart-simple" id="blue"></i>Investments</a>
+                  <a href=""><i class="fa-solid fa-credit-card" id="green"></i>Kuda
+                    Card</a>
+                </div>
+                <div class="dropdown-col" id="dropdown-col">
+                  <span>Payments</span>
+                  <a href=""><i class="fa-regular fa-lightbulb" id="red"></i>Electricity</a>
+                  <a href=""><i class="fa-solid fa-phone" id="green"></i>Airtime</a>
+                  <a href=""><i class="fa-solid fa-wifi" id="l-blue"></i>Internet</a>
+                  <a href=""><i class="fa-solid fa-bag-shopping" id="blue"></i>Gift
+                    Cards
+                  </a>
+                  <a href=""><i class="fa-solid fa-globe" id="yellow"></i>Cardless
+                    Payments</a>
+                  <a href=""><i class="fa-solid fa-tv" id="l-blue"></i>TV</a>
+                  <a href=""><i class="fa-solid fa-heart" id="red"></i>Betting</a>
+                  <a href=""><i class="fa-solid fa-car"></i>Transport</a>
+                  <span>Credit</span>
+                  <a href=""><i class="fa-solid fa-cloud" id="l-blue"></i>Overdrafts</a>
+                  <a href=""><i class="fa-solid fa-money-bill" id="yellow"></i>Salary
+                    Loan</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Business <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <button id="backButton" onclick="goBack()">Go Back</button>
+              <div class="flexdrop">
+                <div class="dropdown-col">
+                  <a href=""><i class="fa-solid fa-house" id="l-blue-black"></i>
+                    Discover Business</a>
+                  <a href=""><i class="fa-solid fa-briefcase" id="green-black"></i>
+                    Business Registration</a>
+                  <a href=""><i class="fa-solid fa-fax" id="green-black"></i>softPOS</a>
+                  <a href=""><i class="fa-solid fa-money-bill" id="blue-black"></i>Cashback
+                  </a>
+                  <a href=""><i class="fa-solid fa-cash-register" id="green-black"></i>POS Machine</a>
+                  <a href=""><i class="fa-solid fa-file-invoice" id="l-blue"></i>Invoicing</a>
+                  <a href=""><i class="fa-solid fa-building-columns" id="green-black"></i>Salary Loan</a>
+                  <a href=""><i class="fa-solid fa-business-time" id="blue-black"></i>Business API</a>
+                  <a href=""><i class="fa-solid fa-circle-nodes" id="deep-blue"></i>Payroll with Bento</a>
+                  <a href=""><i class="fa-solid fa-users" id="yellow"></i>Sub
+                    Accounts</a>
+                  <a href=""><i class="fa-solid fa-mobile" id="green-black"></i>Virtual POS</a>
+                </div>
+                <div class="dropdown-col" id="dropdown-col">
+                  <span>Payments</span>
+                  <a href=""><i class="fa-solid fa-location-arrow" id="green"></i>Spend Money</a>
+                  <a href=""><i class="fa-solid fa-tv" id="l-blue"></i>TV</a>
+                  <a href=""><i class="fa-solid fa-wifi" id="green"></i>Airtime &
+                    Internet Data</a>
+                  <a href=""><i class="fa-regular fa-lightbulb" id="red"></i>Electricity</a>
+                  <a href=""><i class="fa-solid fa-money-bill-wave" id="l-blue"></i>Bill Payments</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Company <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Blog</a>
+              <a href="#">Press</a>
+              <a href="#">Join Our Team</a>
+              <a href="#">About Us</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Help <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Get Help</a>
+              <a href="#">Scam Awaremess </a>
+              <a href="#">FAQs</a>
+              <a href="#">Security</a>
+              <a href="#">Contact Us</a>
+              <a href="#">Self Help</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-actions">
+        <a href="#" class="sign-in">Sign In</a>
+        <button class="join-kuda">Join us</button>
+        <div class="naija">
+          <div class="dropdown">
+            <button class="dropbtn">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <circle opacity="0.3" cx="15" cy="15" r="15" fill="#008751"></circle>
+                <mask id="mask0_37774_3385_bc" maskUnits="userSpaceOnUse" x="6" y="7" width="18" height="16"
+                  style="mask-type: alpha">
+                  <rect x="6.91406" y="7.29712" width="16.1724" height="15.4023" rx="3" fill="#E94D1E"></rect>
+                </mask>
+                <g mask="url(#mask0_37774_3385_bc)">
+                  <path d="M0.324219 4.1355H29.5134V26.0274H0.324219V4.1355Z" fill="#008751"></path>
+                  <path d="M11.1875 4.05444H19.2956V25.9463H11.1875V4.05444Z" fill="white"></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_37774_3385_bc">
+                    <rect width="29.1892" height="21.8919" fill="white" transform="translate(0.324219 4.1355)"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+            <div class="dropdown-content loll">
+              <div class="flag-section">
+                <div class="view">
+                  <!-- <img src="./assets/img/naija.png" alt=""> -->
+                  <p class="view1">
+                    You’re currently viewing Nigerian content.
+                  </p>
+                  <p class="view1">
+                    Choose another country or region to see content specific
+                    to your location or stay here.
+                  </p>
+                  <a class="view-link" href="#" style="
+                        font-size: 18px;
+                        color: var(--primaryAlt);
+                        text-decoration: underline;
+                        margin-left: -1rem;
+                      ">
+                    Stay Here</a>
+                </div>
+                <div class="country">
+                  <div class="com">
+                    <svg width="31" height="30" viewBox="0 0 31 30" fill="none">
+                      <circle opacity="0.3" cx="15.9984" cy="15" r="15" fill="#1DCBEF"></circle>
+                      <path d="M7.49988 23.19H24.4999V6.19H7.49988V23.19Z" fill="url(#pattern0_globe)"></path>
+                      <defs>
+                        <pattern id="pattern0_globe" patternContentUnits="objectBoundingBox" width="1" height="1">
+                          <use xlink:href="#image0_41562_2819_globe" transform="scale(0.015625)"></use>
+                        </pattern>
+                        <image id="image0_41562_2819_globe" width="64" height="64"
+                          xlink:href="data:image/png;base64,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">
+                        </image>
+                      </defs>
+                    </svg>
+                    <a href="#"> Global</a>
+                  </div>
+                  <div class="com">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                      <circle opacity="0.3" cx="15" cy="15" r="15" fill="#008751"></circle>
+                      <mask id="mask0_37774_3385_bc" maskUnits="userSpaceOnUse" x="6" y="7" width="18" height="16"
+                        style="mask-type: alpha">
+                        <rect x="6.91406" y="7.29712" width="16.1724" height="15.4023" rx="3" fill="#E94D1E"></rect>
+                      </mask>
+                      <g mask="url(#mask0_37774_3385_bc)">
+                        <path d="M0.324219 4.1355H29.5134V26.0274H0.324219V4.1355Z" fill="#008751"></path>
+                        <path d="M11.1875 4.05444H19.2956V25.9463H11.1875V4.05444Z" fill="white"></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_37774_3385_bc">
+                          <rect width="29.1892" height="21.8919" fill="white" transform="translate(0.324219 4.1355)">
+                          </rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <a href="#">Nigeria</a>
+                  </div>
+
+                  <div class="com">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                      <circle opacity="0.3" cx="15" cy="15" r="15" fill="#FF4B55"></circle>
+                      <mask id="mask0_37774_3540_d" maskUnits="userSpaceOnUse" x="6" y="7" width="18" height="16"
+                        style="mask-type: alpha">
+                        <rect x="6.91406" y="7.29736" width="16.1724" height="15.4023" rx="3" fill="#E94D1E"></rect>
+                      </mask>
+                      <g mask="url(#mask0_37774_3540_d)">
+                        <path d="M-0.792969 7.26953V23.1048H30.8776V7.26953H-0.792969Z" fill="#012169"></path>
+                        <path
+                          d="M-0.792969 7.26953L30.8776 23.1048L-0.792969 7.26953ZM30.8776 7.26953L-0.792969 23.1048L30.8776 7.26953Z"
+                          fill="black"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M11.5026 15.187L-1.5 8.68573L-0.0836506 5.85303L15.0434 13.4166L30.1705 5.85303L31.5869 8.68573L18.5843 15.187L31.5869 21.6883L30.1705 24.521L15.0434 16.9574L-0.0836506 24.521L-1.5 21.6883L11.5026 15.187Z"
+                          fill="white"></path>
+                        <path
+                          d="M-0.792969 7.26953L30.8776 23.1048L-0.792969 7.26953ZM30.8776 7.26953L-0.792969 23.1048L30.8776 7.26953Z"
+                          fill="black"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M12.6812 15.1871L-1.26562 8.21366L-0.321392 6.3252L15.0418 14.0068L30.4049 6.3252L31.3491 8.21366L17.4023 15.1871L31.3491 22.1605L30.4049 24.0489L15.0418 16.3674L-0.321392 24.0489L-1.26562 22.1605L12.6812 15.1871Z"
+                          fill="#C8102E"></path>
+                        <path d="M15.0423 7.26953V23.1048V7.26953ZM-0.792969 15.1872H30.8776H-0.792969Z" fill="black">
+                        </path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M17.6815 17.8264V23.1048H12.4031V17.8264H-0.792969V12.548H12.4031V7.26953H17.6815V12.548H30.8776V17.8264H17.6815Z"
+                          fill="white"></path>
+                        <path d="M15.0423 7.26953V23.1048V7.26953ZM-0.792969 15.1872H30.8776H-0.792969Z" fill="black">
+                        </path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M16.6258 16.7707V23.1048H13.4588V16.7707H-0.792969V13.6036H13.4588V7.26953H16.6258V13.6036H30.8776V16.7707H16.6258Z"
+                          fill="#C8102E"></path>
+                      </g>
+                    </svg>
+                    <a href="#"> United Kingdom</a>
+                  </div>
+                  <div class="com">
+                    <svg width="31" height="30" viewBox="0 0 31 30" fill="none">
+                      <rect x="0.5" y="0.000488281" width="30" height="30" rx="15" fill="#F93939" fill-opacity="0.3">
+                      </rect>
+                      <rect x="5.1875" y="7.50049" width="20.625" height="15" rx="1.875" fill="white"></rect>
+                      <path
+                        d="M15.6537 17.6161H15.346L15.4229 16.485C15.4186 16.4255 15.3875 16.4098 15.2691 16.4143L14.0382 16.5557C14.0382 16.5557 14.269 16.2729 14.269 16.1316C14.269 15.9902 12.8843 15.0712 12.8843 15.0712C12.8843 15.0712 13.192 15.0005 13.2689 14.9298C13.3459 14.8591 12.9612 14.0815 12.9612 14.0815C12.9612 14.0815 13.743 14.3643 13.8074 14.2936C13.8719 14.2229 13.9613 13.9401 13.9613 13.9401C13.9613 13.9401 14.5767 14.5763 14.7306 14.5763C14.8844 14.5763 14.4229 13.0211 14.4229 13.0211C14.4229 13.0211 14.8075 13.3039 14.9614 13.3039C15.1152 13.3039 15.4999 12.3849 15.4999 12.3849C15.4999 12.3849 15.8845 13.3039 15.9615 13.3039C16.0384 13.3039 16.5769 13.0211 16.5769 13.0211C16.5769 13.0211 16.1922 14.5056 16.2692 14.5763C16.3461 14.647 17.0385 13.9401 17.0385 13.9401C17.0385 13.9401 17.1154 14.2229 17.1923 14.2936C17.2693 14.3643 18.0386 14.0815 18.0386 14.0815C18.0386 14.0815 17.6539 14.8591 17.7308 14.9298C17.8078 15.0005 18.1155 15.0712 18.1155 15.0712C18.1155 15.0712 16.7308 15.9902 16.7308 16.1316C16.7308 16.2729 16.8846 16.5557 16.8846 16.5557L15.7307 16.4143C15.6379 16.3899 15.6058 16.4084 15.5768 16.485L15.6537 17.6161Z"
+                        fill="#F93939"></path>
+                      <rect x="19.625" y="7.50049" width="4.6875" height="15" fill="#F93939"></rect>
+                      <rect x="6.6875" y="7.50049" width="4.6875" height="15" fill="#F93939"></rect>
+                      <defs>
+                        <clipPath id="clip0_54847_875">
+                          <rect x="7.5" y="7.50049" width="16" height="15" rx="1.5" fill="white"></rect>
+                        </clipPath>
+                        <clipPath id="clip1_54847_875">
+                          <rect x="5.1875" y="7.50049" width="20.625" height="15" rx="1.875" fill="white"></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <a href="#">Canada</a>
+                  </div>
+                  <div class="com">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                      <circle opacity="0.3" cx="15" cy="15" r="15" fill="#FCD116"></circle>
+                      <mask id="cmask0_37774_3479_a" maskUnits="userSpaceOnUse" x="6" y="7" width="18" height="16"
+                        style="mask-type: alpha">
+                        <rect x="6.91406" y="7.29736" width="16.1724" height="15.4023" rx="3" fill="#E94D1E"></rect>
+                      </mask>
+                      <g mask="url(#cmask0_37774_3479_a)">
+                        <g clip-path="url(#clip0_37774_3479_a)">
+                          <path d="M2.03125 5.89795H28.0312V23.2313H2.03125V5.89795Z" fill="#006B3F"></path>
+                          <path d="M2.03125 5.89795H28.0312V17.4535H2.03125V5.89795Z" fill="#FCD116"></path>
+                          <path d="M2.03125 5.89795H28.0312V11.6757H2.03125V5.89795Z" fill="#CE1126"></path>
+                          <path
+                            d="M15.0299 11.6758L16.9071 17.4536L11.9922 13.8826H18.0675L13.1527 17.4536L15.0299 11.6758Z"
+                            fill="black"></path>
+                        </g>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_37774_3479_a">
+                          <rect width="26" height="17.3333" fill="white" transform="translate(2.03125 5.89795)"></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <a href="#">Ghana</a>
+                  </div>
+                  <div class="com">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                      <circle opacity="0.3" cx="15" cy="15" r="15" fill="#FCDC04"></circle>
+                      <mask id="mask0_37774_3489_c" maskUnits="userSpaceOnUse" x="6" y="7" width="18" height="16"
+                        style="mask-type: alpha">
+                        <rect x="6.91406" y="7.29736" width="16.1724" height="15.4023" rx="3" fill="#E94D1E"></rect>
+                      </mask>
+                      <g mask="url(#mask0_37774_3489_c)">
+                        <g clip-path="url(#clip0_37774_3489_c)">
+                          <path d="M27.8101 6.48706H2.26953V23.5141H27.8101V6.48706Z" fill="black"></path>
+                          <path d="M27.8101 9.32495H2.26953V15.0006H27.8101V9.32495Z" fill="#FCDC04"></path>
+                          <path d="M27.8101 12.1628H2.26953V15.0007H27.8101V12.1628Z" fill="#D90000"></path>
+                          <path d="M27.8101 17.8384H2.26953V23.5141H27.8101V17.8384Z" fill="#FCDC04"></path>
+                          <path d="M27.8101 20.6763H2.26953V23.5141H27.8101V20.6763Z" fill="#D90000"></path>
+                          <path
+                            d="M15.0401 17.6539C16.5055 17.6539 17.6935 16.466 17.6935 15.0006C17.6935 13.5351 16.5055 12.3472 15.0401 12.3472C13.5747 12.3472 12.3867 13.5351 12.3867 15.0006C12.3867 16.466 13.5747 17.6539 15.0401 17.6539Z"
+                            fill="white"></path>
+                          <path
+                            d="M14.5744 12.9684L14.4023 12.6514C14.4688 12.585 14.5805 12.5337 14.7586 12.5337C14.7586 12.5458 14.7405 12.8809 14.7405 12.8809L14.5744 12.9684Z"
+                            fill="#D90000" stroke="black"></path>
+                          <path
+                            d="M14.7383 12.8839L14.7624 12.5337C14.7624 12.5337 15.1187 12.5126 15.3119 12.745C15.3149 12.742 15.1217 13.0167 15.1217 13.0167L14.7383 12.8839Z"
+                            fill="#FCDC04" stroke="black"></path>
+                          <path
+                            d="M15.1289 13.0136L15.304 12.7419C15.4217 12.8657 15.47 12.9533 15.4882 13.0861C15.4912 13.0891 15.2104 13.1555 15.2104 13.1525C15.2104 13.1495 15.1319 13.0167 15.1289 13.0136Z"
+                            fill="#D90000" stroke="black"></path>
+                          <path
+                            d="M14.6609 17.4999C14.6609 17.4999 14.99 17.1225 15.63 17.204C15.5334 17.047 15.2225 17.0651 15.2225 17.0651C15.2225 17.0651 15.1259 16.3315 15.2013 16.2953C15.2768 16.259 15.5968 16.2983 15.5968 16.2983C15.6391 16.2983 15.7115 16.1836 15.6542 16.1111C15.5968 16.0387 15.4278 15.7609 15.4972 15.7066C15.5666 15.6522 15.944 15.7368 15.944 15.7368L14.8783 14.3722C14.8783 14.3722 14.7696 13.8589 14.987 13.6114C15.2496 13.394 15.2225 13.1585 15.2134 13.1615C15.1772 12.923 14.8149 12.7509 14.5704 12.9713C14.4254 13.1464 14.522 13.2793 14.522 13.2793C14.522 13.2793 14.1417 13.3819 14.1266 13.4483C14.1115 13.5148 14.5553 13.4363 14.5553 13.4363L14.513 13.7412C14.513 13.7412 13.6496 14.5261 14.3107 15.2054C14.3168 15.2024 14.3319 15.1752 14.3319 15.1752C14.3319 15.1752 14.5643 15.462 14.8088 15.5254C15.0383 15.7609 15.0172 15.7247 15.0172 15.7247C15.0172 15.7247 15.0624 16.096 15.0202 16.1685C14.9628 16.1504 14.3771 16.1292 14.2896 16.1624C14.2111 16.1866 13.9092 16.1715 13.9847 16.6636C14.042 16.5308 14.0933 16.413 14.0933 16.413C14.0933 16.413 14.0843 16.5911 14.1568 16.6545C14.1447 16.4674 14.2262 16.3406 14.2262 16.3406C14.2262 16.3406 14.2413 16.5459 14.2866 16.576C14.3319 16.6062 14.3319 16.2439 14.5824 16.2741C14.833 16.3043 15.0142 16.2953 15.0142 16.2953C15.0142 16.2953 15.0987 17.0047 15.0715 17.0712C14.8903 17.0289 14.4587 17.0893 14.4315 17.198C14.6851 17.1829 14.8028 17.213 14.8028 17.213C14.8028 17.213 14.5975 17.3942 14.6609 17.4999Z"
+                            fill="black" stroke="black"></path>
+                          <path
+                            d="M14.761 13.6287C14.761 13.6287 14.1328 14.3212 14.4038 14.8511C14.4182 14.7772 14.412 14.7307 14.421 14.7338C14.4059 14.7247 14.4989 14.7975 14.4918 14.7833C14.4938 14.745 14.4635 14.6629 14.4635 14.6629C14.4918 14.67 14.5202 14.6771 14.5485 14.6842C14.532 14.6535 14.5154 14.6228 14.4989 14.5921C14.5391 14.5968 14.5792 14.6015 14.6194 14.6062C14.6194 14.6062 14.5769 14.4929 14.591 14.4929C14.6052 14.4929 14.6902 14.5 14.6902 14.5C14.5115 14.1793 14.6801 13.9131 14.761 13.6287Z"
+                            fill="#9CA69C" stroke="#9CA69C"></path>
+                          <path
+                            d="M14.9814 13.0347C14.9814 13.0347 15.0146 13.2732 14.8848 13.3426C14.8636 13.3577 14.7821 13.3849 14.7942 13.4332C14.8093 13.4996 14.8455 13.4875 14.8968 13.4754C15.0327 13.4513 15.1897 13.1615 14.9814 13.0347Z"
+                            fill="#9CA69C" stroke="#9CA69C"></path>
+                          <path
+                            d="M14.6995 13.2921C14.7277 13.2921 14.7506 13.2692 14.7506 13.241C14.7506 13.2128 14.7277 13.1899 14.6995 13.1899C14.6713 13.1899 14.6484 13.2128 14.6484 13.241C14.6484 13.2692 14.6713 13.2921 14.6995 13.2921Z"
+                            fill="white"></path>
+                          <path
+                            d="M14.5444 13.4395C14.5112 13.4666 14.3361 13.6478 14.5082 13.7142C14.6863 13.6659 14.638 13.6327 14.6772 13.5934C14.6783 13.5119 14.5887 13.4908 14.5444 13.4395Z"
+                            fill="#D90000" stroke="black"></path>
+                          <path
+                            d="M14.9284 15.1514C14.9194 15.1906 14.8801 15.3355 14.9345 15.4472C15.0854 15.3838 15.1549 15.4019 15.2062 15.4351C15.0824 15.3355 15.0341 15.2932 14.9284 15.1514Z"
+                            fill="#9CA69C" stroke="#9CA69C"></path>
+                          <path
+                            d="M15.1875 15.8364L15.1966 16.1746C15.1966 16.1746 15.3143 16.1957 15.3686 16.1746C15.423 16.1534 15.3656 15.9391 15.1875 15.8364Z"
+                            fill="white" stroke="white"></path>
+                          <path
+                            d="M16.0418 15.8788C16.0418 15.8788 15.8245 15.3535 15.269 15.2206C14.7135 15.0878 14.7859 14.4961 14.8312 14.4599C14.8554 14.4085 14.8735 14.33 15.0335 14.4055C15.1935 14.481 15.9301 14.8523 16.0358 14.8704C16.1415 14.8886 16.0509 15.8909 16.0418 15.8788Z"
+                            fill="#9CA69C" stroke="black"></path>
+                          <path
+                            d="M15.5118 15.2176C15.5027 15.2237 16.2545 15.6614 16.028 16.0388C16.2424 15.8969 16.173 15.6493 16.173 15.6493C16.173 15.6493 16.3481 16.1052 15.9224 16.3286C15.9677 16.3679 15.9979 16.3588 15.9979 16.3588L15.9254 16.4313C15.9254 16.4313 15.8922 16.4856 16.179 16.3467C16.1005 16.4101 16.0945 16.4554 16.0945 16.4554C16.0945 16.4554 16.1156 16.5158 16.3028 16.3528C16.1518 16.5158 16.1186 16.6003 16.1186 16.5973C16.5262 16.5611 17.4138 15.2357 15.8379 14.8433C15.9224 14.9308 15.9103 14.9188 15.9103 14.9188L15.5118 15.2176Z"
+                            fill="#D90000" stroke="black"></path>
+                          <path
+                            d="M15.547 15.0877C15.6497 15.1601 15.6859 15.1843 15.698 15.2205C15.6044 15.1994 15.5198 15.2054 15.5198 15.2054C15.5198 15.2054 15.3176 15.0122 15.2813 14.9971C15.2542 14.9971 15.0972 14.8975 15.0972 14.8975C15.0187 14.8582 14.9462 14.5865 15.2361 14.665C15.5349 14.8069 15.5772 14.819 15.5772 14.819C15.6959 14.8562 15.8147 14.8935 15.9334 14.9307C16.0019 15.0072 16.0703 15.0837 16.1387 15.1602C16.1387 15.1602 15.7734 14.979 15.7281 14.976C15.8278 15.0575 15.8851 15.1692 15.8851 15.1692C15.7694 15.136 15.6688 15.1058 15.547 15.0877Z"
+                            fill="white" stroke="black"></path>
+                          <path d="M14.125 13.4665C14.125 13.4665 14.4752 13.3819 14.5175 13.394L14.125 13.4665Z"
+                            fill="black"></path>
+                          <path d="M14.125 13.4665C14.125 13.4665 14.4752 13.3819 14.5175 13.394" stroke="white"></path>
+                        </g>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_37774_3489_c">
+                          <rect width="25.5405" height="17.027" fill="white" transform="translate(2.26953 6.48706)">
+                          </rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <a href="#">Uganda</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- mobile section  -->
+  <div class="mobile">
+    <div style="z-index: 999">
+      <img style="z-index: 1" src="./assets/img/kuda_bank.svg" alt="" srcset="" />
+    </div>
+    <div>
+      <div id="mySidepanel" class="sidepanel">
+        <span href="" class="closebtn" onclick="closeNav()">×</span>
+        <a href="#">personal <i class="fa fa-caret-down"></i></a>
+        <a href="#">Business <i class="fa fa-caret-down"></i></a>
+        <a href="#">Company <i class="fa fa-caret-down"></i></a>
+        <a href="#">help <i class="fa fa-caret-down"></i></a>
+      </div>
+      <button class="openbtn" onclick="openNav()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+  <!-- hero section  -->
+  <div class="hero">
+    <div class="omo">
+      <div class="hero-content">
+        <h1>The money app for Africans.</h1>
+        <p>
+          Make free transfers, enjoy cashless <br />
+          payment options and earn intrest on <br />
+          your savings with Kuda.
+        </p>
+        <div>
+          <div class="app">
+            <a href="#" class="appp"><svg href="google.com" width="120" height="40" viewBox="0 0 120 40" fill="none"
+                class="ap">
+                <g clip-path="url(#clip0_app_papaa_plaay)">
+                  <path
+                    d="M110.135 -0.000114141H9.53468C9.16798 -0.000114141 8.80568 -0.000114141 8.43995 0.00188586C8.1338 0.00388586 7.83009 0.00969586 7.521 0.0145859C6.84951 0.0224877 6.17961 0.0815621 5.5171 0.191296C4.85552 0.303418 4.21467 0.514802 3.61622 0.818296C3.0185 1.12436 2.47235 1.52205 1.99757 1.99696C1.5203 2.47052 1.12246 3.0179 0.81935 3.61805C0.5154 4.21699 0.304641 4.85882 0.19435 5.52137C0.0830109 6.18307 0.0230984 6.85241 0.01515 7.52337C0.00587 7.82997 0.00489 8.13759 0 8.44423V31.5585C0.00489 31.869 0.00587 32.1698 0.01515 32.4804C0.0231008 33.1513 0.0830134 33.8206 0.19435 34.4823C0.304336 35.1452 0.515108 35.7874 0.81935 36.3866C1.12233 36.9848 1.52022 37.53 1.99757 38.0009C2.47054 38.4779 3.01705 38.8759 3.61622 39.1796C4.21467 39.4839 4.85545 39.6965 5.5171 39.8104C6.17972 39.9192 6.84956 39.9783 7.521 39.9872C7.83009 39.994 8.1338 39.9979 8.43995 39.9979C8.80567 39.9999 9.168 39.9999 9.53468 39.9999H110.135C110.494 39.9999 110.859 39.9999 111.219 39.9979C111.523 39.9979 111.836 39.994 112.141 39.9872C112.811 39.9788 113.479 39.9197 114.141 39.8104C114.804 39.6957 115.448 39.4831 116.049 39.1796C116.647 38.8757 117.193 38.4777 117.666 38.0009C118.142 37.5281 118.541 36.9833 118.848 36.3866C119.15 35.787 119.358 35.1448 119.467 34.4823C119.578 33.8205 119.64 33.1514 119.652 32.4804C119.656 32.1698 119.656 31.869 119.656 31.5585C119.664 31.1952 119.664 30.8339 119.664 30.4647V9.53602C119.664 9.16981 119.664 8.80653 119.656 8.44423C119.656 8.13759 119.656 7.82997 119.652 7.52333C119.64 6.85231 119.578 6.18312 119.467 5.52133C119.358 4.85917 119.149 4.21739 118.848 3.61801C118.23 2.41508 117.252 1.43591 116.049 0.818206C115.448 0.515453 114.804 0.304126 114.141 0.191206C113.48 0.0809886 112.811 0.0218936 112.141 0.0144459C111.836 0.00956586 111.523 0.00370586 111.219 0.00175586C110.859 -0.000244141 110.494 -0.000244141 110.135 -0.000244141V-0.000114141Z"
+                    fill="#A6A6A6"></path>
+                  <path
+                    d="M8.44487 39.125C8.14019 39.125 7.84287 39.1211 7.54058 39.1143C6.91436 39.1061 6.2896 39.0516 5.67144 38.9512C5.09503 38.8519 4.53664 38.6673 4.0147 38.4033C3.49754 38.1415 3.02585 37.7983 2.6177 37.3867C2.20364 36.98 1.85891 36.5082 1.59719 35.9902C1.33258 35.4688 1.14945 34.9099 1.05419 34.333C0.951311 33.7131 0.895651 33.0863 0.887687 32.458C0.881347 32.2471 0.873047 31.5449 0.873047 31.5449V8.44434C0.873047 8.44434 0.881887 7.75293 0.887737 7.5498C0.895363 6.92248 0.950699 6.29665 1.05327 5.67773C1.14871 5.09925 1.33197 4.53875 1.59673 4.01563C1.85749 3.49794 2.2003 3.02586 2.61187 2.61768C3.02297 2.20562 3.49617 1.8606 4.01421 1.59521C4.53495 1.33209 5.09228 1.14873 5.66753 1.05127C6.28772 0.949836 6.91465 0.894996 7.54304 0.88721L8.44536 0.875H111.214L112.127 0.8877C112.75 0.895099 113.371 0.94945 113.985 1.05029C114.566 1.14898 115.13 1.33362 115.656 1.59814C116.694 2.13299 117.539 2.97916 118.071 4.01807C118.332 4.53758 118.512 5.09351 118.607 5.66699C118.71 6.29099 118.768 6.92174 118.78 7.5542C118.783 7.8374 118.783 8.1416 118.783 8.44434C118.791 8.81934 118.791 9.17627 118.791 9.53613V30.4648C118.791 30.8281 118.791 31.1826 118.783 31.54C118.783 31.8652 118.783 32.1631 118.779 32.4697C118.768 33.0909 118.711 33.7104 118.608 34.3232C118.515 34.9043 118.333 35.4675 118.068 35.9932C117.805 36.5056 117.462 36.9733 117.053 37.3789C116.644 37.7927 116.172 38.1379 115.653 38.4014C115.128 38.6674 114.566 38.8527 113.985 38.9512C113.367 39.0522 112.742 39.1067 112.116 39.1143C111.823 39.1211 111.517 39.125 111.219 39.125L110.135 39.127L8.44487 39.125Z"
+                    fill="black"></path>
+                  <path
+                    d="M24.769 20.3006C24.7797 19.4659 25.0014 18.6475 25.4135 17.9216C25.8255 17.1956 26.4145 16.5857 27.1256 16.1485C26.6738 15.5034 26.0779 14.9724 25.385 14.5979C24.6922 14.2233 23.9216 14.0155 23.1344 13.9908C21.4552 13.8146 19.8272 14.9957 18.9715 14.9957C18.0992 14.9957 16.7817 14.0083 15.363 14.0375C14.4453 14.0672 13.551 14.334 12.7671 14.8121C11.9832 15.2901 11.3365 15.9631 10.8901 16.7654C8.95607 20.1138 10.3987 25.0349 12.2513 27.7415C13.1782 29.0668 14.2615 30.5473 15.6789 30.4948C17.066 30.4372 17.584 29.6103 19.2583 29.6103C20.9171 29.6103 21.4031 30.4948 22.8493 30.4614C24.3377 30.4372 25.2754 29.1302 26.1698 27.7923C26.8358 26.8479 27.3483 25.8042 27.6882 24.6997C26.8235 24.334 26.0856 23.7218 25.5665 22.9395C25.0474 22.1572 24.77 21.2394 24.769 20.3006Z"
+                    fill="white"></path>
+                  <path
+                    d="M22.0373 12.2108C22.8489 11.2366 23.2487 9.98445 23.1518 8.72021C21.912 8.85044 20.7668 9.44299 19.9443 10.3798C19.5421 10.8375 19.2341 11.3699 19.0379 11.9467C18.8416 12.5235 18.761 13.1333 18.8006 13.7412C19.4207 13.7476 20.0342 13.6132 20.5949 13.3481C21.1555 13.083 21.6487 12.6942 22.0373 12.2108Z"
+                    fill="white"></path>
+                  <path
+                    d="M42.3025 27.1397H37.5691L36.4324 30.4961H34.4275L38.9109 18.0781H40.9939L45.4773 30.4961H43.4382L42.3025 27.1397ZM38.0593 25.5908H41.8113L39.9617 20.1436H39.91L38.0593 25.5908Z"
+                    fill="white"></path>
+                  <path
+                    d="M55.1599 25.9697C55.1599 28.7832 53.6541 30.5908 51.3816 30.5908C50.806 30.6209 50.2335 30.4883 49.7297 30.2082C49.2259 29.928 48.8112 29.5117 48.533 29.0068H48.49V33.4912H46.6316V21.4423H48.4305V22.9482H48.4646C48.7556 22.4457 49.1773 22.0316 49.6849 21.7497C50.1926 21.4679 50.7671 21.3289 51.3474 21.3476C53.6453 21.3476 55.1599 23.164 55.1599 25.9697ZM53.2498 25.9697C53.2498 24.1367 52.3025 22.9316 50.8572 22.9316C49.4373 22.9316 48.4822 24.1621 48.4822 25.9697C48.4822 27.7939 49.4373 29.0156 50.8572 29.0156C52.3025 29.0156 53.2498 27.8193 53.2498 25.9697Z"
+                    fill="white"></path>
+                  <path
+                    d="M65.1248 25.9697C65.1248 28.7832 63.6189 30.5908 61.3465 30.5908C60.7708 30.6209 60.1983 30.4883 59.6945 30.2081C59.1907 29.928 58.776 29.5117 58.4978 29.0068H58.4548V33.4912H56.5964V21.4423H58.3953V22.9482H58.4294C58.7204 22.4457 59.1421 22.0315 59.6498 21.7497C60.1574 21.4679 60.7319 21.3289 61.3123 21.3476C63.6101 21.3476 65.1248 23.164 65.1248 25.9697ZM63.2146 25.9697C63.2146 24.1367 62.2674 22.9316 60.822 22.9316C59.4021 22.9316 58.447 24.1621 58.447 25.9697C58.447 27.7939 59.4021 29.0156 60.822 29.0156C62.2674 29.0156 63.2146 27.8193 63.2146 25.9697H63.2146Z"
+                    fill="white"></path>
+                  <path
+                    d="M71.7107 27.0362C71.8484 28.2676 73.0447 29.0762 74.6795 29.0762C76.2459 29.0762 77.3728 28.2676 77.3728 27.1572C77.3728 26.1934 76.6931 25.6162 75.0838 25.2207L73.4744 24.833C71.1941 24.2822 70.1355 23.2158 70.1355 21.4854C70.1355 19.3428 72.0027 17.8711 74.6541 17.8711C77.2781 17.8711 79.0769 19.3428 79.1375 21.4854H77.2615C77.1492 20.2461 76.1248 19.4981 74.6277 19.4981C73.1306 19.4981 72.1062 20.2549 72.1062 21.3565C72.1062 22.2344 72.7605 22.751 74.3611 23.1465L75.7292 23.4824C78.2771 24.0849 79.3357 25.1084 79.3357 26.9248C79.3357 29.248 77.4851 30.7031 74.5417 30.7031C71.7878 30.7031 69.9285 29.2822 69.8083 27.0361L71.7107 27.0362Z"
+                    fill="white"></path>
+                  <path
+                    d="M83.3464 19.2998V21.4424H85.0681V22.9141H83.3464V27.9053C83.3464 28.6807 83.6912 29.042 84.448 29.042C84.6524 29.0384 84.8564 29.0241 85.0593 28.999V30.4619C84.719 30.5255 84.3732 30.5543 84.0271 30.5478C82.1941 30.5478 81.4792 29.8593 81.4792 28.1035V22.9141H80.1628V21.4424H81.4792V19.2998H83.3464Z"
+                    fill="white"></path>
+                  <path
+                    d="M86.0652 25.9697C86.0652 23.1211 87.7429 21.3311 90.3591 21.3311C92.9841 21.3311 94.6541 23.1211 94.6541 25.9697C94.6541 28.8262 92.9929 30.6084 90.3591 30.6084C87.7263 30.6084 86.0652 28.8262 86.0652 25.9697ZM92.7605 25.9697C92.7605 24.0156 91.865 22.8623 90.3591 22.8623C88.8533 22.8623 87.9587 24.0244 87.9587 25.9697C87.9587 27.9316 88.8533 29.0762 90.3591 29.0762C91.865 29.0762 92.7605 27.9316 92.7605 25.9697H92.7605Z"
+                    fill="white"></path>
+                  <path
+                    d="M96.1863 21.4425H97.9587V22.9835H98.0017C98.1217 22.5022 98.4036 22.0769 98.8002 21.779C99.1968 21.4811 99.6838 21.3288 100.179 21.3478C100.394 21.347 100.607 21.3703 100.816 21.4171V23.1554C100.546 23.0728 100.264 23.0348 99.9812 23.0431C99.7112 23.0321 99.4421 23.0797 99.1922 23.1826C98.9424 23.2855 98.7178 23.4412 98.5338 23.6391C98.3498 23.837 98.2108 24.0724 98.1264 24.3291C98.042 24.5857 98.0141 24.8576 98.0447 25.1261V30.4962H96.1863L96.1863 21.4425Z"
+                    fill="white"></path>
+                  <path
+                    d="M109.385 27.8369C109.135 29.4805 107.534 30.6084 105.486 30.6084C102.852 30.6084 101.218 28.8437 101.218 26.0127C101.218 23.1729 102.861 21.3311 105.408 21.3311C107.913 21.3311 109.488 23.0518 109.488 25.7969V26.4336H103.094V26.5459C103.064 26.8791 103.106 27.2148 103.216 27.5306C103.326 27.8464 103.502 28.1352 103.733 28.3778C103.963 28.6203 104.242 28.8111 104.552 28.9374C104.862 29.0637 105.195 29.1226 105.529 29.1103C105.968 29.1515 106.409 29.0498 106.786 28.8203C107.162 28.5909 107.455 28.246 107.62 27.8369L109.385 27.8369ZM103.102 25.1348H107.629C107.645 24.8352 107.6 24.5354 107.495 24.2541C107.391 23.9729 107.229 23.7164 107.02 23.5006C106.812 23.2849 106.561 23.1145 106.284 23.0003C106.006 22.8861 105.708 22.8305 105.408 22.8369C105.105 22.8351 104.805 22.8933 104.525 23.008C104.245 23.1227 103.991 23.2918 103.776 23.5054C103.562 23.7191 103.392 23.973 103.276 24.2527C103.161 24.5323 103.102 24.8321 103.102 25.1348V25.1348Z"
+                    fill="white"></path>
+                  <path
+                    d="M37.8262 8.73065C38.2158 8.70269 38.6067 8.76155 38.9709 8.90298C39.335 9.04441 39.6632 9.26489 39.9317 9.54852C40.2003 9.83214 40.4026 10.1718 40.524 10.5431C40.6454 10.9144 40.6829 11.308 40.6338 11.6955C40.6338 13.6017 39.6035 14.6975 37.8262 14.6975H35.6709V8.73065H37.8262ZM36.5976 13.8536H37.7226C38.0011 13.8703 38.2797 13.8246 38.5382 13.72C38.7967 13.6154 39.0287 13.4545 39.2172 13.2489C39.4057 13.0433 39.546 12.7983 39.6278 12.5317C39.7097 12.2651 39.7311 11.9836 39.6904 11.7076C39.7281 11.4328 39.7046 11.153 39.6215 10.8884C39.5383 10.6237 39.3977 10.3807 39.2096 10.1768C39.0216 9.97285 38.7907 9.81304 38.5337 9.70881C38.2766 9.60457 37.9996 9.55849 37.7226 9.57386H36.5976V13.8536Z"
+                    fill="white"></path>
+                  <path
+                    d="M41.6807 12.444C41.6524 12.1481 41.6862 11.8496 41.7801 11.5675C41.8739 11.2854 42.0257 11.0261 42.2256 10.8061C42.4256 10.5861 42.6693 10.4103 42.9411 10.2901C43.213 10.1698 43.507 10.1077 43.8042 10.1077C44.1015 10.1077 44.3955 10.1698 44.6673 10.2901C44.9392 10.4103 45.1829 10.5861 45.3828 10.8061C45.5828 11.0261 45.7345 11.2854 45.8284 11.5675C45.9222 11.8496 45.9561 12.1481 45.9278 12.444C45.9566 12.7403 45.9232 13.0392 45.8296 13.3218C45.736 13.6043 45.5843 13.8641 45.3843 14.0845C45.1843 14.3049 44.9404 14.4811 44.6683 14.6016C44.3962 14.7221 44.1019 14.7844 43.8042 14.7844C43.5066 14.7844 43.2123 14.7221 42.9402 14.6016C42.668 14.4811 42.4241 14.3049 42.2241 14.0845C42.0242 13.8641 41.8725 13.6043 41.7789 13.3218C41.6853 13.0392 41.6519 12.7403 41.6807 12.444ZM45.0137 12.444C45.0137 11.468 44.5752 10.8972 43.8057 10.8972C43.0332 10.8972 42.5987 11.468 42.5987 12.4441C42.5987 13.4279 43.0333 13.9943 43.8057 13.9943C44.5752 13.9943 45.0137 13.424 45.0137 12.444H45.0137Z"
+                    fill="white"></path>
+                  <path
+                    d="M51.5732 14.6975H50.6514L49.7207 11.3811H49.6504L48.7236 14.6975H47.8105L46.5693 10.1946H47.4707L48.2773 13.6306H48.3438L49.2695 10.1946H50.1221L51.0479 13.6306H51.1182L51.9209 10.1946H52.8096L51.5732 14.6975Z"
+                    fill="white"></path>
+                  <path
+                    d="M53.8535 10.1946H54.709V10.91H54.7754C54.888 10.653 55.0781 10.4377 55.3189 10.2939C55.5598 10.15 55.8395 10.085 56.1191 10.1077C56.3382 10.0912 56.5582 10.1243 56.7628 10.2044C56.9674 10.2845 57.1514 10.4096 57.3011 10.5704C57.4508 10.7313 57.5623 10.9237 57.6275 11.1335C57.6927 11.3434 57.7099 11.5652 57.6777 11.7825V14.6975H56.7891V12.0057C56.7891 11.282 56.4746 10.9222 55.8174 10.9222C55.6686 10.9152 55.5201 10.9406 55.3821 10.9964C55.244 11.0522 55.1197 11.1372 55.0175 11.2456C54.9154 11.354 54.8379 11.4832 54.7904 11.6243C54.7429 11.7655 54.7264 11.9152 54.7422 12.0633V14.6976H53.8535L53.8535 10.1946Z"
+                    fill="white"></path>
+                  <path d="M59.0938 8.43677H59.9824V14.6975H59.0938V8.43677Z" fill="white"></path>
+                  <path
+                    d="M61.2178 12.4441C61.1895 12.1482 61.2234 11.8496 61.3172 11.5675C61.4111 11.2854 61.5629 11.0261 61.7628 10.8061C61.9628 10.5861 62.2065 10.4104 62.4784 10.2901C62.7503 10.1698 63.0443 10.1077 63.3416 10.1077C63.6389 10.1077 63.9329 10.1698 64.2047 10.2901C64.4766 10.4104 64.7203 10.5861 64.9203 10.8061C65.1203 11.0261 65.272 11.2854 65.3659 11.5675C65.4598 11.8496 65.4936 12.1482 65.4653 12.4441C65.4942 12.7404 65.4607 13.0393 65.3671 13.3219C65.2734 13.6044 65.1217 13.8642 64.9217 14.0846C64.7217 14.305 64.4778 14.4811 64.2057 14.6017C63.9335 14.7222 63.6392 14.7845 63.3416 14.7845C63.0439 14.7845 62.7496 14.7222 62.4775 14.6017C62.2053 14.4811 61.9614 14.305 61.7614 14.0846C61.5614 13.8642 61.4097 13.6044 61.3161 13.3219C61.2225 13.0393 61.189 12.7404 61.2178 12.4441ZM64.5508 12.4441C64.5508 11.4681 64.1123 10.8973 63.3428 10.8973C62.5703 10.8973 62.1358 11.4681 62.1358 12.4441C62.1358 13.428 62.5704 13.9944 63.3428 13.9944C64.1123 13.9944 64.5508 13.4241 64.5508 12.4441H64.5508Z"
+                    fill="white"></path>
+                  <path
+                    d="M66.4009 13.4241C66.4009 12.6135 67.0044 12.1462 68.0757 12.0798L69.2954 12.0095V11.6208C69.2954 11.1453 68.981 10.8767 68.3735 10.8767C67.8774 10.8767 67.5337 11.0588 67.4351 11.3772H66.5747C66.6655 10.6038 67.3931 10.1077 68.4146 10.1077C69.5435 10.1077 70.1802 10.6697 70.1802 11.6208V14.6975H69.3247V14.0647H69.2544C69.1117 14.2917 68.9113 14.4767 68.6737 14.6009C68.436 14.7252 68.1697 14.7841 67.9019 14.7717C67.7128 14.7914 67.5218 14.7712 67.341 14.7125C67.1602 14.6538 66.9938 14.5579 66.8524 14.4309C66.711 14.3039 66.5977 14.1487 66.52 13.9753C66.4422 13.8019 66.4016 13.6141 66.4009 13.4241ZM69.2954 13.0393V12.6628L68.1958 12.7331C67.5757 12.7746 67.2944 12.9856 67.2944 13.3826C67.2944 13.7878 67.646 14.0237 68.1294 14.0237C68.2711 14.038 68.4142 14.0237 68.5502 13.9816C68.6862 13.9395 68.8123 13.8705 68.9211 13.7787C69.0299 13.6868 69.1191 13.574 69.1834 13.447C69.2477 13.32 69.2858 13.1813 69.2954 13.0393Z"
+                    fill="white"></path>
+                  <path
+                    d="M71.3481 12.4441C71.3481 11.0213 72.0796 10.1199 73.2173 10.1199C73.4987 10.1069 73.778 10.1743 74.0225 10.3142C74.267 10.4541 74.4667 10.6607 74.5981 10.9099H74.6646V8.43677H75.5532V14.6975H74.7017V13.9861H74.6314C74.4897 14.2336 74.2831 14.4376 74.0339 14.5761C73.7846 14.7146 73.5022 14.7822 73.2173 14.7717C72.0718 14.7718 71.3481 13.8704 71.3481 12.4441ZM72.2661 12.4441C72.2661 13.3992 72.7163 13.9739 73.4693 13.9739C74.2183 13.9739 74.6812 13.3909 74.6812 12.448C74.6812 11.5095 74.2134 10.9182 73.4693 10.9182C72.7212 10.9182 72.2661 11.4968 72.2661 12.4441H72.2661Z"
+                    fill="white"></path>
+                  <path
+                    d="M79.23 12.444C79.2017 12.1481 79.2356 11.8496 79.3294 11.5675C79.4232 11.2854 79.575 11.0261 79.7749 10.8061C79.9749 10.5861 80.2186 10.4103 80.4904 10.2901C80.7623 10.1698 81.0563 10.1077 81.3536 10.1077C81.6508 10.1077 81.9448 10.1698 82.2167 10.2901C82.4885 10.4103 82.7322 10.5861 82.9322 10.8061C83.1321 11.0261 83.2839 11.2854 83.3777 11.5675C83.4715 11.8496 83.5054 12.1481 83.4771 12.444C83.5059 12.7403 83.4725 13.0392 83.3789 13.3218C83.2853 13.6043 83.1336 13.8641 82.9336 14.0845C82.7336 14.3049 82.4897 14.4811 82.2176 14.6016C81.9455 14.7221 81.6512 14.7844 81.3536 14.7844C81.0559 14.7844 80.7616 14.7221 80.4895 14.6016C80.2173 14.4811 79.9735 14.3049 79.7735 14.0845C79.5735 13.8641 79.4218 13.6043 79.3282 13.3218C79.2346 13.0392 79.2012 12.7403 79.23 12.444ZM82.563 12.444C82.563 11.468 82.1245 10.8972 81.355 10.8972C80.5826 10.8972 80.148 11.468 80.148 12.4441C80.148 13.4279 80.5826 13.9943 81.355 13.9943C82.1245 13.9943 82.563 13.424 82.563 12.444Z"
+                    fill="white"></path>
+                  <path
+                    d="M84.6694 10.1946H85.5249V10.91H85.5913C85.704 10.653 85.894 10.4377 86.1348 10.2939C86.3757 10.15 86.6555 10.085 86.9351 10.1077C87.1542 10.0912 87.3742 10.1243 87.5788 10.2044C87.7834 10.2845 87.9673 10.4096 88.117 10.5704C88.2667 10.7313 88.3783 10.9237 88.4435 11.1335C88.5087 11.3434 88.5258 11.5652 88.4937 11.7825V14.6975H87.605V12.0057C87.605 11.282 87.2905 10.9222 86.6333 10.9222C86.4846 10.9152 86.336 10.9406 86.198 10.9964C86.0599 11.0522 85.9356 11.1372 85.8335 11.2456C85.7313 11.354 85.6539 11.4832 85.6063 11.6243C85.5588 11.7655 85.5423 11.9152 85.5581 12.0633V14.6976H84.6694V10.1946Z"
+                    fill="white"></path>
+                  <path
+                    d="M93.5151 9.07349V10.2151H94.4907V10.9636H93.5151V13.2791C93.5151 13.7507 93.7095 13.9573 94.1519 13.9573C94.2651 13.9569 94.3783 13.9501 94.4907 13.9368V14.677C94.3311 14.7055 94.1694 14.7207 94.0073 14.7224C93.019 14.7224 92.6255 14.3747 92.6255 13.5066V10.9636H91.9106V10.215H92.6255V9.07349H93.5151Z"
+                    fill="white"></path>
+                  <path
+                    d="M95.7046 8.43677H96.5854V10.9182H96.6558C96.7739 10.6589 96.9691 10.4423 97.2148 10.298C97.4605 10.1536 97.7447 10.0885 98.0288 10.1116C98.2467 10.0997 98.4646 10.1361 98.6669 10.2181C98.8692 10.3002 99.0508 10.4259 99.199 10.5862C99.3471 10.7465 99.458 10.9376 99.5238 11.1457C99.5896 11.3539 99.6086 11.5739 99.5795 11.7903V14.6975H98.69V12.0095C98.69 11.2903 98.355 10.926 97.7271 10.926C97.5743 10.9135 97.4207 10.9345 97.2769 10.9875C97.1332 11.0406 97.0027 11.1244 96.8947 11.2332C96.7867 11.3419 96.7038 11.4729 96.6517 11.6171C96.5997 11.7612 96.5797 11.915 96.5933 12.0676V14.6975H95.7046L95.7046 8.43677Z"
+                    fill="white"></path>
+                  <path
+                    d="M104.761 13.4818C104.64 13.8933 104.379 14.2493 104.022 14.4874C103.665 14.7256 103.236 14.8307 102.81 14.7845C102.513 14.7923 102.218 14.7355 101.946 14.618C101.673 14.5004 101.43 14.325 101.232 14.1039C101.034 13.8827 100.887 13.6212 100.8 13.3374C100.713 13.0535 100.689 12.7543 100.73 12.4603C100.69 12.1654 100.715 11.8655 100.801 11.5808C100.888 11.2961 101.034 11.0334 101.231 10.8103C101.428 10.5872 101.671 10.409 101.942 10.2878C102.214 10.1666 102.509 10.1052 102.806 10.1077C104.059 10.1077 104.815 10.9637 104.815 12.3777V12.6878H101.635V12.7376C101.621 12.9029 101.642 13.0692 101.696 13.226C101.75 13.3827 101.837 13.5264 101.949 13.6479C102.062 13.7693 102.199 13.8658 102.352 13.9312C102.504 13.9966 102.669 14.0295 102.834 14.0276C103.047 14.0532 103.262 14.0149 103.453 13.9177C103.644 13.8205 103.801 13.6687 103.906 13.4817L104.761 13.4818ZM101.635 12.0306H103.91C103.921 11.8795 103.9 11.7277 103.849 11.5849C103.798 11.4422 103.718 11.3117 103.614 11.2019C103.509 11.092 103.383 11.0052 103.243 10.9471C103.103 10.8889 102.953 10.8606 102.801 10.8641C102.647 10.8622 102.495 10.891 102.353 10.949C102.21 11.0069 102.081 11.0928 101.972 11.2015C101.864 11.3102 101.778 11.4396 101.72 11.582C101.662 11.7244 101.633 11.8769 101.635 12.0306H101.635Z"
+                    fill="white"></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_app_papaa_plaay">
+                    <rect width="119.664" height="40" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg></a>
+            <a href="" class="appp">
+              <svg width="135" height="40" viewBox="0 0 135 40" fill="none" class="ap">
+                <path
+                  d="M130 0H5C2.23858 0 0 2.23858 0 5V35C0 37.7614 2.23858 40 5 40H130C132.761 40 135 37.7614 135 35V5C135 2.23858 132.761 0 130 0Z"
+                  fill="black"></path>
+                <path
+                  d="M130 0.8C131.114 0.8 132.182 1.2425 132.97 2.03015C133.758 2.8178 134.2 3.88609 134.2 5V35C134.2 36.1139 133.758 37.1822 132.97 37.9698C132.182 38.7575 131.114 39.2 130 39.2H5C3.88609 39.2 2.8178 38.7575 2.03015 37.9698C1.2425 37.1822 0.8 36.1139 0.8 35V5C0.8 3.88609 1.2425 2.8178 2.03015 2.03015C2.8178 1.2425 3.88609 0.8 5 0.8H130ZM130 0H5C3.67392 0 2.40215 0.526784 1.46447 1.46447C0.526784 2.40215 0 3.67392 0 5L0 35C0 36.3261 0.526784 37.5979 1.46447 38.5355C2.40215 39.4732 3.67392 40 5 40H130C131.326 40 132.598 39.4732 133.536 38.5355C134.473 37.5979 135 36.3261 135 35V5C135 3.67392 134.473 2.40215 133.536 1.46447C132.598 0.526784 131.326 0 130 0V0Z"
+                  fill="#A6A6A6"></path>
+                <path
+                  d="M47.4201 10.24C47.4365 10.6067 47.3785 10.973 47.2496 11.3167C47.1208 11.6604 46.9236 11.9745 46.6701 12.24C46.386 12.5333 46.0432 12.7633 45.6641 12.9149C45.285 13.0666 44.8781 13.1364 44.4701 13.12C44.0598 13.1291 43.6519 13.054 43.2718 12.8992C42.8916 12.7444 42.5473 12.5132 42.2601 12.22C41.9638 11.9325 41.7301 11.5869 41.5735 11.2049C41.4169 10.8229 41.3409 10.4127 41.3501 9.99997C41.3395 9.58557 41.4149 9.17346 41.5715 8.78964C41.7281 8.40583 41.9626 8.05864 42.2601 7.76997C42.7056 7.33466 43.2698 7.04071 43.8819 6.92506C44.4939 6.80942 45.1265 6.87723 45.7001 7.11997C46.0607 7.26821 46.3823 7.49746 46.6401 7.78997L46.1101 8.31997C45.9115 8.08075 45.6599 7.89111 45.3752 7.76613C45.0905 7.64114 44.7806 7.58425 44.4701 7.59997C44.1578 7.59844 43.8483 7.66 43.5603 7.78096C43.2723 7.90193 43.0117 8.0798 42.7941 8.30391C42.5766 8.52803 42.4065 8.79378 42.2941 9.08522C42.1817 9.37666 42.1293 9.6878 42.1401 9.99997C42.1336 10.4661 42.2652 10.9237 42.5184 11.3151C42.7717 11.7065 43.1352 12.0142 43.563 12.1992C43.9909 12.3843 44.464 12.4385 44.9227 12.355C45.3813 12.2715 45.8049 12.054 46.1401 11.73C46.4485 11.396 46.6291 10.964 46.6501 10.51H44.4701V9.78997H47.3801C47.4025 9.93903 47.4158 10.0893 47.4201 10.24Z"
+                  fill="white" stroke="white" stroke-width="0.2" stroke-miterlimit="10"></path>
+                <path d="M52 7.74H49.3V9.64H51.76V10.36H49.3V12.26H52V13H48.52V7H52V7.74Z" fill="white" stroke="white"
+                  stroke-width="0.2" stroke-miterlimit="10"></path>
+                <path d="M55.2801 13H54.5101V7.74H52.8301V7H57.0001V7.74H55.2801V13Z" fill="white" stroke="white"
+                  stroke-width="0.2" stroke-miterlimit="10"></path>
+                <path d="M59.9399 13V7H60.7099V13H59.9399Z" fill="white" stroke="white" stroke-width="0.2"
+                  stroke-miterlimit="10"></path>
+                <path d="M64.1299 13H63.3599V7.74H61.6799V7H65.7999V7.74H64.1299V13Z" fill="white" stroke="white"
+                  stroke-width="0.2" stroke-miterlimit="10"></path>
+                <path
+                  d="M73.6099 12.2199C73.3211 12.509 72.9781 12.7383 72.6006 12.8947C72.2231 13.0512 71.8185 13.1317 71.4099 13.1317C71.0013 13.1317 70.5967 13.0512 70.2192 12.8947C69.8417 12.7383 69.4987 12.509 69.2099 12.2199C68.919 11.9298 68.6909 11.5831 68.5395 11.2012C68.3881 10.8194 68.3168 10.4105 68.3299 9.9999C68.3168 9.58933 68.3881 9.18044 68.5395 8.79856C68.6909 8.41669 68.919 8.06998 69.2099 7.7799C69.4925 7.4827 69.8343 7.24813 70.2133 7.09138C70.5923 6.93462 70.9999 6.85917 71.4099 6.8699C71.8193 6.86342 72.2257 6.94082 72.604 7.09732C72.9824 7.25382 73.3247 7.48612 73.6099 7.7799C73.8974 8.07239 74.1235 8.41953 74.2746 8.80083C74.4257 9.18212 74.499 9.58984 74.4899 9.9999C74.503 10.4105 74.4317 10.8194 74.2803 11.2012C74.1289 11.5831 73.9008 11.9298 73.6099 12.2199ZM69.7799 11.7199C69.9929 11.9358 70.2467 12.1072 70.5265 12.2242C70.8063 12.3412 71.1066 12.4014 71.4099 12.4014C71.7132 12.4014 72.0135 12.3412 72.2933 12.2242C72.5731 12.1072 72.8269 11.9358 73.0399 11.7199C73.2614 11.4929 73.4349 11.2236 73.55 10.9281C73.6652 10.6326 73.7195 10.3169 73.7099 9.9999C73.7143 9.68005 73.6536 9.36265 73.5316 9.06697C73.4095 8.77129 73.2286 8.50351 72.9999 8.2799C72.7869 8.06402 72.5331 7.89261 72.2533 7.77562C71.9735 7.65862 71.6732 7.59838 71.3699 7.59838C71.0666 7.59838 70.7663 7.65862 70.4865 7.77562C70.2067 7.89261 69.9529 8.06402 69.7399 8.2799C69.5256 8.51014 69.3594 8.78091 69.2512 9.07628C69.143 9.37166 69.095 9.68569 69.1099 9.9999C69.1003 10.3169 69.1546 10.6326 69.2698 10.9281C69.3849 11.2236 69.5584 11.4929 69.7799 11.7199Z"
+                  fill="white" stroke="white" stroke-width="0.2" stroke-miterlimit="10"></path>
+                <path d="M75.5801 13V7H76.5101L79.4301 11.67V10.51V7H80.2001V13H79.4001L76.3501 8.11V9.26V13H75.5801Z"
+                  fill="white" stroke="white" stroke-width="0.2" stroke-miterlimit="10"></path>
+                <path
+                  d="M68.1401 21.7499C67.2976 21.7519 66.4745 22.0037 65.7751 22.4734C65.0756 22.9432 64.5312 23.6098 64.2106 24.3889C63.89 25.1681 63.8076 26.0248 63.9739 26.8508C64.1402 27.6768 64.5477 28.4349 65.1449 29.0292C65.7421 29.6236 66.5021 30.0276 67.3288 30.19C68.1556 30.3524 69.0119 30.2661 69.7896 29.9418C70.5672 29.6175 71.2313 29.07 71.6977 28.3683C72.1642 27.6667 72.4121 26.8425 72.4101 25.9999C72.4183 25.4379 72.3132 24.8799 72.1013 24.3593C71.8893 23.8386 71.5748 23.366 71.1764 22.9694C70.7779 22.5729 70.3038 22.2606 69.7822 22.051C69.2606 21.8415 68.7021 21.7391 68.1401 21.7499ZM68.1401 28.5799C67.6237 28.616 67.1083 28.496 66.6611 28.2353C66.2138 27.9747 65.8553 27.5855 65.6321 27.1184C65.409 26.6512 65.3315 26.1278 65.4098 25.6161C65.4881 25.1043 65.7185 24.628 66.0711 24.249C66.4237 23.8699 66.8821 23.6057 67.3869 23.4907C67.8916 23.3757 68.4193 23.4152 68.9013 23.604C69.3833 23.7929 69.7973 24.1223 70.0896 24.5496C70.3819 24.9769 70.5388 25.4822 70.5401 25.9999C70.5562 26.3279 70.5065 26.6559 70.3938 26.9643C70.2812 27.2728 70.1079 27.5556 69.8842 27.7961C69.6606 28.0366 69.391 28.2298 69.0914 28.3644C68.7919 28.499 68.4684 28.5723 68.1401 28.5799ZM58.8201 21.7499C57.9776 21.7519 57.1545 22.0037 56.4551 22.4734C55.7556 22.9432 55.2112 23.6098 54.8906 24.3889C54.57 25.1681 54.4876 26.0248 54.6539 26.8508C54.8202 27.6768 55.2277 28.4349 55.8249 29.0292C56.4221 29.6236 57.1821 30.0276 58.0088 30.19C58.8356 30.3524 59.6919 30.2661 60.4696 29.9418C61.2472 29.6175 61.9113 29.07 62.3777 28.3683C62.8442 27.6667 63.0921 26.8425 63.0901 25.9999C63.0983 25.4379 62.9932 24.8799 62.7813 24.3593C62.5693 23.8386 62.2548 23.366 61.8564 22.9694C61.4579 22.5729 60.9838 22.2606 60.4622 22.051C59.9406 21.8415 59.3821 21.7391 58.8201 21.7499ZM58.8201 28.5799C58.3037 28.616 57.7883 28.496 57.3411 28.2353C56.8938 27.9747 56.5353 27.5855 56.3121 27.1184C56.089 26.6512 56.0115 26.1278 56.0898 25.6161C56.1681 25.1043 56.3985 24.628 56.7511 24.249C57.1037 23.8699 57.5621 23.6057 58.0669 23.4907C58.5716 23.3757 59.0993 23.4152 59.5813 23.604C60.0633 23.7929 60.4773 24.1223 60.7696 24.5496C61.0619 24.9769 61.2188 25.4822 61.2201 25.9999C61.2362 26.3279 61.1865 26.6559 61.0738 26.9643C60.9612 27.2728 60.7879 27.5556 60.5642 27.7961C60.3406 28.0366 60.071 28.2298 59.7714 28.3644C59.4719 28.499 59.1484 28.5723 58.8201 28.5799ZM47.7401 23.0599V24.8599H52.0601C51.9924 25.7077 51.6399 26.5077 51.0601 27.1299C50.6268 27.5714 50.1056 27.9171 49.5302 28.1444C48.9549 28.3718 48.3382 28.4759 47.7201 28.4499C46.4471 28.4499 45.2262 27.9442 44.326 27.044C43.4258 26.1439 42.9201 24.923 42.9201 23.6499C42.9201 22.3769 43.4258 21.156 44.326 20.2558C45.2262 19.3556 46.4471 18.8499 47.7201 18.8499C48.9405 18.8318 50.119 19.2952 51.0001 20.1399L52.2701 18.8699C51.6741 18.2804 50.9664 17.8158 50.1886 17.5033C49.4107 17.1908 48.5783 17.0366 47.7401 17.0499C46.8511 17.0153 45.9643 17.1605 45.1327 17.4769C44.3012 17.7932 43.5421 18.2742 42.9009 18.8909C42.2596 19.5077 41.7495 20.2475 41.4011 21.0661C41.0527 21.8847 40.873 22.7652 40.873 23.6549C40.873 24.5446 41.0527 25.4251 41.4011 26.2437C41.7495 27.0623 42.2596 27.8022 42.9009 28.4189C43.5421 29.0357 44.3012 29.5166 45.1327 29.833C45.9643 30.1493 46.8511 30.2945 47.7401 30.2599C48.5955 30.2941 49.4485 30.1469 50.243 29.8281C51.0375 29.5092 51.7556 29.0259 52.3501 28.4099C53.4002 27.2563 53.9598 25.7391 53.9101 24.1799C53.9137 23.8046 53.8836 23.4298 53.8201 23.0599H47.7401ZM93.0501 24.4599C92.7893 23.6927 92.3016 23.0227 91.6516 22.5388C91.0016 22.0548 90.2199 21.7797 89.4101 21.7499C88.8631 21.7489 88.3217 21.86 87.8193 22.0765C87.317 22.2929 86.8644 22.6101 86.4895 23.0085C86.1146 23.4068 85.8254 23.8778 85.6397 24.3923C85.4541 24.9068 85.3759 25.454 85.4101 25.9999C85.4016 26.9128 85.6885 27.8039 86.2282 28.5402C86.7679 29.2765 87.5313 29.8184 88.4044 30.0851C89.2774 30.3517 90.2134 30.3288 91.0723 30.0196C91.9313 29.7105 92.6672 29.1318 93.1701 28.3699L91.7201 27.3699C91.5039 27.7302 91.1974 28.0277 90.8307 28.2329C90.4641 28.4382 90.0502 28.544 89.6301 28.5399C89.1967 28.5578 88.768 28.4442 88.4003 28.214C88.0327 27.9837 87.7432 27.6477 87.5701 27.2499L93.2601 24.8999L93.0501 24.4599ZM87.2501 25.8799C87.2298 25.5698 87.2718 25.2588 87.3736 24.9651C87.4753 24.6715 87.6348 24.4012 87.8426 24.1701C88.0504 23.939 88.3023 23.7518 88.5835 23.6195C88.8647 23.4873 89.1696 23.4126 89.4801 23.3999C89.8012 23.3794 90.1213 23.4537 90.4005 23.6138C90.6796 23.7738 90.9056 24.0124 91.0501 24.2999L87.2501 25.8799ZM82.6301 29.9999H84.5001V17.4999H82.6301V29.9999ZM79.5701 22.6999H79.5001C79.2162 22.3909 78.8694 22.1462 78.483 21.9823C78.0966 21.8185 77.6796 21.7392 77.2601 21.7499C76.1673 21.8029 75.1367 22.2743 74.3821 23.0665C73.6274 23.8587 73.2064 24.9108 73.2064 26.0049C73.2064 27.099 73.6274 28.1512 74.3821 28.9433C75.1367 29.7355 76.1673 30.2069 77.2601 30.2599C77.6841 30.2684 78.1047 30.1832 78.4919 30.0103C78.8791 29.8375 79.2234 29.5812 79.5001 29.2599H79.5701V29.8699C79.5701 31.4999 78.7001 32.3699 77.3001 32.3699C76.8324 32.3596 76.3783 32.2106 75.9955 31.9418C75.6127 31.6729 75.3185 31.2964 75.1501 30.8599L73.5301 31.5299C73.8296 32.2822 74.3504 32.9258 75.0235 33.3758C75.6966 33.8257 76.4905 34.0608 77.3001 34.0499C79.4901 34.0499 81.3001 32.7599 81.3001 29.6199V21.9999H79.5701V22.6999ZM77.4201 28.5799C76.7649 28.5391 76.1499 28.25 75.7004 27.7716C75.2509 27.2932 75.0006 26.6614 75.0006 26.0049C75.0006 25.3485 75.2509 24.7167 75.7004 24.2383C76.1499 23.7598 76.7649 23.4708 77.4201 23.4299C77.7403 23.4437 78.0545 23.5218 78.344 23.6596C78.6334 23.7973 78.8922 23.9918 79.1049 24.2316C79.3176 24.4714 79.4799 24.7515 79.5822 25.0553C79.6844 25.3591 79.7245 25.6803 79.7001 25.9999C79.7274 26.3206 79.6893 26.6435 79.5883 26.9491C79.4872 27.2546 79.3252 27.5365 79.1121 27.7777C78.8989 28.0189 78.6391 28.2143 78.3483 28.3522C78.0575 28.4901 77.7417 28.5676 77.4201 28.5799ZM101.81 17.4999H97.3301V29.9999H99.2001V25.2599H101.81C102.343 25.2982 102.878 25.2263 103.382 25.0486C103.886 24.871 104.348 24.5915 104.739 24.2274C105.13 23.8634 105.442 23.4227 105.655 22.9328C105.869 22.4428 105.979 21.9142 105.979 21.3799C105.979 20.8456 105.869 20.317 105.655 19.8271C105.442 19.3372 105.13 18.8965 104.739 18.5324C104.348 18.1684 103.886 17.8888 103.382 17.7112C102.878 17.5336 102.343 17.4616 101.81 17.4999ZM101.81 23.4999H99.2001V19.2399H101.85C102.418 19.2399 102.962 19.4654 103.363 19.8667C103.765 20.268 103.99 20.8124 103.99 21.3799C103.99 21.9475 103.765 22.4918 103.363 22.8931C102.962 23.2945 102.418 23.5199 101.85 23.5199L101.81 23.4999ZM113.35 21.7099C112.669 21.6679 111.991 21.8265 111.399 22.1659C110.807 22.5054 110.328 23.0109 110.02 23.6199L111.67 24.3099C111.837 24.0093 112.087 23.7634 112.39 23.6019C112.694 23.4405 113.038 23.3703 113.38 23.3999C113.617 23.3722 113.858 23.392 114.088 23.4582C114.317 23.5245 114.531 23.6358 114.718 23.7856C114.904 23.9355 115.058 24.1209 115.172 24.3311C115.286 24.5413 115.356 24.7721 115.38 25.0099V25.1299C114.779 24.8138 114.109 24.6491 113.43 24.6499C111.65 24.6499 109.83 25.6499 109.83 27.4699C109.848 27.8568 109.943 28.2361 110.11 28.5855C110.277 28.9348 110.513 29.247 110.803 29.5035C111.093 29.7601 111.432 29.9557 111.799 30.0787C112.166 30.2018 112.554 30.2498 112.94 30.2199C113.409 30.2459 113.877 30.1466 114.295 29.9322C114.714 29.7178 115.067 29.3961 115.32 28.9999H115.38V29.9999H117.18V25.1899C117.18 22.9999 115.52 21.7299 113.39 21.7299L113.35 21.7099ZM113.12 28.5599C112.51 28.5599 111.66 28.2499 111.66 27.4999C111.66 26.4999 112.72 26.1599 113.66 26.1599C114.254 26.1453 114.841 26.2903 115.36 26.5799C115.297 27.123 115.04 27.6249 114.635 27.9926C114.231 28.3604 113.707 28.569 113.16 28.5799L113.12 28.5599ZM123.74 21.9999L121.6 27.4199H121.54L119.32 21.9999H117.32L120.65 29.5799L118.75 33.7899H120.75L125.82 21.9999H123.74ZM106.94 29.9999H108.8V17.4999H106.94V29.9999Z"
+                  fill="white"></path>
+                <path
+                  d="M10.4399 7.53997C10.1212 7.93403 9.96391 8.43441 9.99994 8.93997V31.06C9.96591 31.5704 10.1348 32.0735 10.4699 32.46L10.5399 32.54L22.8999 20.15V19.85L10.5099 7.46997L10.4399 7.53997Z"
+                  fill="url(#paint0_linear_app_goog_lld)"></path>
+                <path
+                  d="M26.9999 24.28L22.8999 20.15V19.85L26.9999 15.72L27.0899 15.78L31.9999 18.56C33.3999 19.35 33.3999 20.65 31.9999 21.45L27.1099 24.23L26.9999 24.28Z"
+                  fill="url(#paint1_linear_app_goog_lld)"></path>
+                <path
+                  d="M27.1199 24.23L22.8999 20L10.4399 32.46C10.7225 32.7115 11.0842 32.8562 11.4623 32.869C11.8404 32.8818 12.211 32.7619 12.5099 32.53L27.1199 24.23Z"
+                  fill="url(#paint2_linear_app_goog_lld)"></path>
+                <path
+                  d="M27.1199 15.78L12.5099 7.47997C12.213 7.24488 11.8426 7.12203 11.464 7.133C11.0854 7.14397 10.7228 7.28808 10.4399 7.53997L22.8999 20L27.1199 15.78Z"
+                  fill="url(#paint3_linear_app_goog_lld)"></path>
+                <path opacity="0.2"
+                  d="M26.9999 24.1299L12.5099 32.3799C12.2219 32.5973 11.8708 32.7149 11.5099 32.7149C11.1491 32.7149 10.798 32.5973 10.5099 32.3799L10.4399 32.4499L10.5099 32.5299C10.798 32.7473 11.1491 32.8649 11.5099 32.8649C11.8708 32.8649 12.2219 32.7473 12.5099 32.5299L27.1199 24.2299L26.9999 24.1299Z"
+                  fill="black"></path>
+                <path opacity="0.12"
+                  d="M10.4399 32.3199C10.1187 31.9233 9.96126 31.4188 9.99988 30.9099V31.0599C9.96585 31.5703 10.1348 32.0735 10.4699 32.4599L10.5399 32.3899L10.4399 32.3199Z"
+                  fill="black"></path>
+                <path opacity="0.12"
+                  d="M32 21.3L27 24.13L27.09 24.23L32 21.44C32.2898 21.3174 32.5413 21.119 32.7278 20.8656C32.9143 20.6122 33.0291 20.3132 33.06 20C32.9975 20.2846 32.869 20.5505 32.6849 20.7763C32.5007 21.0021 32.2662 21.1815 32 21.3Z"
+                  fill="black"></path>
+                <path opacity="0.25"
+                  d="M12.51 7.61998L32 18.7C32.2662 18.8185 32.5007 18.9979 32.6849 19.2237C32.869 19.4495 32.9975 19.7154 33.06 20C33.0291 19.6868 32.9143 19.3878 32.7278 19.1344C32.5413 18.881 32.2898 18.6825 32 18.56L12.51 7.47998C11.12 6.67998 10 7.33998 10 8.93998V9.08998C10 7.48998 11.12 6.82998 12.51 7.61998Z"
+                  fill="white"></path>
+                <defs>
+                  <linearGradient id="paint0_linear_app_goog_lld" x1="21.7999" y1="8.70997" x2="5.01993" y2="25.49"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#00A0FF"></stop>
+                    <stop offset="0.01" stop-color="#00A1FF"></stop>
+                    <stop offset="0.26" stop-color="#00BEFF"></stop>
+                    <stop offset="0.51" stop-color="#00D2FF"></stop>
+                    <stop offset="0.76" stop-color="#00DFFF"></stop>
+                    <stop offset="1" stop-color="#00E3FF"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_app_goog_lld" x1="33.8299" y1="20" x2="9.6399" y2="20"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFE000"></stop>
+                    <stop offset="0.41" stop-color="#FFBD00"></stop>
+                    <stop offset="0.78" stop-color="#FFA500"></stop>
+                    <stop offset="1" stop-color="#FF9C00"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint2_linear_app_goog_lld" x1="24.8299" y1="22.3" x2="2.06994" y2="45.05"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FF3A44"></stop>
+                    <stop offset="1" stop-color="#C31162"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint3_linear_app_goog_lld" x1="7.29994" y1="0.179969" x2="17.4599" y2="10.34"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#32A071"></stop>
+                    <stop offset="0.07" stop-color="#2DA771"></stop>
+                    <stop offset="0.48" stop-color="#15CF74"></stop>
+                    <stop offset="0.8" stop-color="#06E775"></stop>
+                    <stop offset="1" stop-color="#00F076"></stop>
+                  </linearGradient>
+                </defs>
+              </svg></a>
+          </div>
+          <div class="cbn">
+            <p class="">Fully Licensed by the CBN</p>
+            <img class="lol" src="./assets/img/cbn.svg" alt="" srcset="" />
+            <p>Deposit Insured by</p>
+            <img src="./assets/img/ndic.svg" alt="" srcset="" />
+          </div>
+        </div>
+      </div>
+      <div class="hero-animation">
+        <img src="./assets/img/kuda.gif" alt="" srcset="" />
+      </div>
+    </div>
+  </div>
+  <!-- the second page  -->
+  <div class="secondpage" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+    <div class="rows">
+      <div class="rowcontent">
+        <div class="icon"><i class="fa-solid fa-credit-card"></i></div>
+        <span>
+          Order a Kuda Visa card on the app with pickup and delivery options.
+        </span>
+      </div>
+      <div class="rowcontent">
+        <div class="icon"><i class="fa-solid fa-clock"></i></div>
+        <span> Enjoy cashless payment options online and offline. </span>
+      </div>
+      <div class="rowcontent">
+        <div class="icon">
+          <i class="fa-solid fa-scale-unbalanced-flip"></i>
+        </div>
+        <span> Pay your essential bills and buy gift cards easily. </span>
+      </div>
+    </div>
+    <div class="rows second-column">
+      <div class="rowcontent">
+        <div class="icon"><i class="fa-solid fa-location-arrow"></i></div>
+        <span> Get 25 free transfers to Nigerian banks every month. </span>
+      </div>
+      <div class="rowcontent">
+        <div class="icon"><i class="fa-solid fa-piggy-bank"></i></div>
+        <span> Save money automatically any time you spend. </span>
+      </div>
+    </div>
+  </div>
+  <!-- third-section  -->
+  <div class="third-section">
+    <div class="sec">
+      <h2>
+        Your Phone + <br />
+        our app + <br />
+        a debit card = <br />
+        a simple life
+      </h2>
+      <p>
+        We designed a money app for your lifestyle, and <br />
+        you can get a debit card to go with it. That's all <br />
+        you need to make the right money moves.
+      </p>
+      <a href="#">Open An Account in Minutes ></a>
+    </div>
+    <div class="third-img">
+      <img src="./assets/img/third page image.png" alt="" srcset="" />
+    </div>
+  </div>
+  <!-- four-section  -->
+  <div class="four-section">
+    <div class="sec">
+      <h2>
+        It’s your money, we <br />
+        just help you <br />
+        manage it.
+      </h2>
+      <p>
+        Save it, spend it, send it. It’s up to you. Whatever <br />
+        you choose to do with your money, we’ll make <br />
+        sure it’s done better and free of charge. We take <br />
+        responsibility for that.
+      </p>
+    </div>
+    <div class="four-img">
+      <img src="./assets/img/fourth image.png" alt="" srcset="" />
+    </div>
+  </div>
+  <!-- fifth-section  -->
+  <div class="third-section">
+    <div class="sav sec">
+      <h2>
+        Save money as you <br />
+        spend it, seriously.
+      </h2>
+      <p>
+        We designed a money app for your lifestyle, and <br />
+        you can get a debit card to go with it. That's all <br />
+        you need to make the right money moves.
+      </p>
+      <a href="#">See all our Savings></a>
+    </div>
+    <div class="third-img">
+      <img src="./assets/img/5th image.png" alt="" srcset="" />
+    </div>
+  </div>
+  <!-- sixth section  -->
+  <div class="four-section">
+    <div class="sec">
+      <h2>
+        We’re always <br />
+        happy to help you.
+      </h2>
+      <p>
+        You can chat with us on the app, slide into our <br />
+        DMs, tweet, leave an Instagram comment, send <br />
+        an email or call. However you choose to reach <br />
+        out, there’ll always be a friendly person there to <br />
+        make your life easy.
+      </p>
+    </div>
+    <div class="four-img">
+      <img style="width: 80%" src="./assets/img/6th image.png" alt="" srcset="" />
+    </div>
+  </div>
+  <!-- seventh section  -->
+  <div class="third-section">
+    <div class="sav sec">
+      <h2>
+        We’re always <br />
+        happy to help you.
+      </h2>
+      <div style="max-width: 400px">
+        <p>
+          You can chat with us on the app, slide into our DMs, tweet, leave an
+          Instagram comment, send an email or call. However you choose to
+          reach out, there’ll always be a friendly person there to make your
+          life easy.
+        </p>
+      </div>
+      <a href="#">Get Help</a>
+    </div>
+    <div class="third-img" style="margin-top: 1rem">
+      <img src="./assets/img/hello.png" alt="" srcset="" />
+    </div>
+  </div>
+  <!-- eight-section  -->
+  <div class="four-section">
+    <div class="sec">
+      <h2>
+        We’re always <br />
+        happy to help you.
+      </h2>
+      <p>
+        You can chat with us on the app, slide into our <br />
+        DMs, tweet, leave an Instagram comment, send <br />
+        an email or call. However you choose to reach <br />
+        out, there’ll always be a friendly person there to <br />
+        make your life easy.
+      </p>
+    </div>
+    <div class="four-img">
+      <img style="width: 80%" src="./assets/img/free banking.png" alt="" srcset="" />
+    </div>
+  </div>
+
+  <!-- marquee section  -->
+  <div class="marquee">
+    <h2 class="marquee-header" id="must">Don’t just take our word for it</h2>
+    <div class="marquee-content">
+      <div class="testimonial">
+        <p>
+          Well done to the guys at <span class="kudabank">@kudabank</span> had a dispensing error on
+          Friday night and reached out to them on Sunday... 48 working
+          hours after and my money is back in my account... Special shout
+          out to Maxwell and Norah
+        </p>
+        <div class="img-text">
+          <img src="./assets/img/Telax.png" alt="Profile 1" />
+          <h4>Tomisinv</h4>
+        </div>
+      </div>
+      <div class="testimonial">
+        <p>
+          Just joined the best Digital Bank in Nigeria I have no
+          complaints whatsoever since I started using Kuda
+        </p>
+        <div class="img-text" id="babajide">
+          <img src="./assets/img/adebambo.png" alt="Profile 2" />
+          <h4>Babajide Duroshola</h4>
+        </div>
+      </div>
+      <div class="testimonial">
+        <p>
+          Never thought an app would stylish become my everyday way to
+          bank and have access to physical cash.<span class="kudabank">@kudabank</span> is sleek
+        </p>
+
+        <div class="img-text" id="kudu">
+          <img src="./assets/img/muhd.png" alt="Profile 3" />
+          <h4>Mu'azu Muhammad Kudu</h4>
+        </div>
+      </div>
+      <div class="testimonial">
+        <p>
+          This is the best banking app! I'm enjoying seamless banking plus
+          the free transfers to other banks is a thing of joy. This is
+          what I call freedom. I've made Kuda my main bank account and I'm
+          gonna refer all my friends!
+        </p>
+
+        <div class="img-text">
+          <img src="./assets/img/realsok.png" alt="Profile 4" />
+          <h4>@RealSOK_</h4>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <p>
+          Well done to the guys at <span class="kudabank">@kudabank</span> had a dispensing error on
+          Friday night and reached out to them on Sunday... 48 working
+          hours after and my money is back in my account... Special shout
+          out to Maxwell and Norah
+        </p>
+        <div class="img-text">
+          <img src="./assets/img/Telax.png" alt="Profile 1" />
+          <h4>Murtuza Muhammad Kudu</h4>
+        </div>
+      </div>
+      <div class="testimonial">
+        <p>
+          Just joined the best Digital Bank in Nigeria I have no
+          complaints whatsoever since I started using Kuda
+        </p>
+        <div class="img-text" id="babajide">
+          <img src="./assets/img/babajide.png" alt="Profile 2" />
+          <h4>Babajide Duroshola</h4>
+        </div>
+      </div>
+      <div class="testimonial">
+        <p>
+          Never thought an app would stylish become my everyday way to
+          bank and have access to physical cash. <span class="kudabank">@kudabank</span> is sleek
+        </p>
+
+        <div class="img-text" id="kudu">
+          <img src="./assets/img/adebambo.png" alt="Profile 3" />
+          <h4>Adebambo Oyekan</h4>
+        </div>
+      </div>
+      <div class="testimonial">
+        <p>
+          This is the best banking app! I'm enjoying seamless banking plus
+          the free transfers to other banks is a thing of joy. This is
+          what I call freedom. I've made Kuda my main bank account and I'm
+          gonna refer all my friends!
+        </p>
+
+        <div class="img-text">
+          <img src="./assets/img/realsok.png" alt="Profile 4" />
+          <h4>@RealSOK_</h4>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <p>
+          Well done to the guys at <span class="kudabank">@kudabank</span> had a dispensing error on
+          Friday night and reached out to them on Sunday... 48 working
+          hours after and my money is back in my account... Special shout
+          out to Maxwell and Norah
+        </p>
+        <div class="img-text">
+          <img src="./assets/img/Telax.png" alt="Profile 1" />
+          <h4>feanyichukwu Obaji</h4>
+        </div>
+        <!-- Repeat testimonials as needed to create the loop effect -->
+      </div>
+      <div class="testimonial">
+        <p>
+          Well done to the guys at <span class="kudabank">@kudabank</span> had a dispensing error on
+          Friday night and reached out to them on Sunday... 48 working
+          hours after and my money is back in my account... Special shout
+          out to Maxwell and Norah
+        </p>
+        <div class="img-text">
+          <img src="./assets/img/adebambo.png" alt="Profile 1" />
+          <h4>Tomisinv</h4>
+        </div>
+      </div>
+      <div class="testimonial">
+        <p>
+          Just joined the best Digital Bank in Nigeria I have no
+          complaints whatsoever since I started using Kuda
+        </p>
+        <div class="img-text" id="babajide">
+          <img src="./assets/img/babajide.png" alt="Profile 2" />
+          <h4>Babajide Duroshola</h4>
+        </div>
+      </div>
+      <div class="testimonial">
+        <p>
+          Never thought an app would stylish become my everyday way to
+          bank and have access to physical cash.<span class="kudabank">@kudabank</span> is sleek
+        </p>
+
+        <div class="img-text" id="kudu">
+          <img src="./assets/img/muhd.png" alt="Profile 3" />
+          <h4>Mu'azu Muhammad Kudu</h4>
+        </div>
+
+      </div>
+    </div>
+    <!-- sponsors section  -->
+    <div class="sponsors">
+      <!-- <img src="./assets/img/tc.png" alt=""> -->
+      <img
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA4MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQwIDBWMTMuMzMzM0gyNi42NjY3VjQwSDEzLjMzMzNWMTMuMzMzM0gwVjBINDBaIiBmaWxsPSIjMEE5RTAxIi8+CjxwYXRoIGQ9Ik04MCAwSDUzLjMzMzNWMTMuMzMzM0g4MFYwWiIgZmlsbD0iIzBBOUUwMSIvPgo8cGF0aCBkPSJNODAgMjYuNjY2OFY0MC4wMDAySDQwVjEzLjMzMzVINTMuMzMzM1YyNi42NjY4SDgwWiIgZmlsbD0iIzBBOUUwMSIvPgo8L3N2Zz4K"
+        loading="lazy" alt="kuda Microfinance Bank Publications" style="height: auto; width: auto;">
+      <img
+        src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjYzIiB3aWR0aD0iMTAyIgoJeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCTxtYXNrIGlkPSJhIiBmaWxsPSIjZmZmIj4KCQk8cGF0aCBkPSJNMCAuNDQ3aDEwMS41NDJWNjNIMHoiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPgoJPC9tYXNrPgoJPG1hc2sgaWQ9ImIiIGZpbGw9IiNmZmYiPgoJCTxwYXRoIGQ9Ik0wIC40NDdoMTAxLjU0MlY2M0gweiIgZmlsbC1ydWxlPSJldmVub2RkIi8+Cgk8L21hc2s+Cgk8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgoJCTxwYXRoIGQ9Ik04MS42MTggNTQuMjVsLS4wMzEuMDI0LS4yNzYtLjMzYy01LjY5MyA0LjY4MS0xMi45MjQgNy4yMTQtMjAuMzg2IDcuMjE0LTguNTM5IDAtMTYuNTQtMy4yMjQtMjIuNTQtOS4xMzQtNS45OTktNS44MzItOS4zMDctMTMuNjYxLTkuMzA3LTIxLjk1IDAtNi4zNyAxLjkyMy0xMi41ODggNS42OTItMTcuODA3IDMuNjkzLTUuMTQyIDguNzctOC45OCAxNC43Ny0xMS4yMDZsLS4yMy0uNjE0QzQzLjIzMiAyLjc1IDM4LjAwMiA2LjY2NCAzNC4zMDkgMTEuODg0Yy0zLjg0NiA1LjM3Mi01LjkyMyAxMS42NjYtNS45MjMgMTguMTkgMCA4LjQ0MiAzLjM4NSAxNi40MjQgOS41MzkgMjIuNDFhMzIuOTUgMzIuOTUgMCAwMDEuNzkzIDEuNjFsLS43OTQuOTI0QzQ1LjAwMSA2MC4xNiA1Mi44NDggNjMgNjAuOTI1IDYzYzcuOTI0IDAgMTUuNTM5LTIuNzYzIDIxLjYxNy03LjY3NXoiIGZpbGw9IiMwMDRiODYiIG1hc2s9InVybCgjYSkiLz4KCQk8ZyBmaWxsPSIjMTQxNDE0Ij4KCQkJPHBhdGggZD0iTTM1LjA3OCAxMC44ODZhNS4zMjMgNS4zMjMgMCAwMS0uMjMtMS41MzVjMC0yLjMwMyAxLjUzOC00LjM3NiA0LjMwNy00LjM3Ni42MTYgMCAxLjE1NC4wNzcgMS42MTYuMjMuNDYxLS4zODMgMS0uNzY3IDEuNTM4LTEuMDc0LS45MjMtLjUzNy0yLS44NDMtMy4xNTQtLjg0My0zLjM4NSAwLTYuMjMgMi42ODYtNi4yMyA2LjA2MyAwIDEuMTUxLjM4NCAyLjMwMi45MjIgMy4yMjMuMTU0LS4yMy4zMDgtLjQ2LjQ2MS0uNjE0LjIzMi0uMzg0LjU0LS43NjcuNzctMS4wNzRNNDMuMzg2IDQuODk5Yy0uNTM4LjMwNy0xIC42MTQtMS40NjEuOTk4IDEgLjc2NyAxLjUzOCAyLjA3MiAxLjUzOCAzLjQ1NCAwIDIuMzAyLTEuNjkyIDQuMjk3LTQuMzA4IDQuMjk3LTEuNDYyIDAtMi42MTUtLjYxNC0zLjM4NC0xLjYxMS0uMTU0LjIzLS4zMDguMzg0LS40NjIuNjE0LS4yMy4zMDctLjQ2MS42MTQtLjYxNi45MmE2LjQ4OCA2LjQ4OCAwIDAwNC40NjIgMS43NjdjMy40NjIgMCA2LjIzMS0yLjYxIDYuMjMxLTUuOTg3IDAtMS43NjYtLjc2OS0zLjM3Ny0yLTQuNDUyTTMyLjM4NiAyNS4wMDhjMCAxLjg0Mi0xLjA3NyAzLjQ1NC0yLjY5MiA0LjA2OHYxLjg0MmMyLjYxNS0uNjkgNC42MTQtMi45OTMgNC42MTQtNS45MSAwLTIuMDcyLTEuMTUzLTMuOTE0LTIuODQ1LTUuMDY2LS4yMzEuNjE0LS4zODUgMS4xNTItLjYxNiAxLjY4OSAxIC44NDQgMS41MzkgMi4wNzMgMS41MzkgMy4zNzdNMjguNDYyIDI5LjM4M2gtLjM4NGMtMi42MTUgMC00LjM4NS0xLjk5Ni00LjM4NS00LjM3NSAwLTIuMjI2IDEuNTM5LTQuMjk4IDQuMzg1LTQuMjk4LjYxNSAwIDEuMjMuMDc2IDEuNjkyLjMwNy4xNTQtLjUzOC4zMDgtMS4wNzUuNTM5LTEuNjEyYTcuMTU3IDcuMTU3IDAgMDAtMi4yMzEtLjM4NGMtMy40NjIgMC02LjIzMSAyLjY4Ny02LjIzMSA1Ljk4NyAwIDMuNDU0IDIuNzcgNi4wNjMgNi4yMzEgNi4wNjNoLjM4NGMwLS4zMDYtLjA3Ny0uNjktLjA3Ny0uOTk3IDAtLjIzLjA3Ny0uNDYuMDc3LS42OTFNMzIuNTQgMzYuNTJjMi43NjkgMCA0LjMwNyAyLjA3MyA0LjMwNyA0LjI5OSAwIDEuOTk1LTEuMjMgMy43Ni0zLjE1NCA0LjIyMS4zMDguNTM3LjYxNi45OTguOTIzIDEuNTM1IDIuMzg1LS44NDQgNC4xNTUtMi45OTMgNC4xNTUtNS43NTYgMC0zLjMtMi44NDctNS45ODctNi4yMzEtNS45ODctLjg0NiAwLTEuNjkzLjE1NC0yLjM4NS40Ni4wNzcuNTM4LjE1NCAxLjE1Mi4zMDggMS42OS42MTUtLjMwOCAxLjMwNy0uNDYxIDIuMDc3LS40NjFNMjguMjMxIDQwLjgxOGMwLTEuMTUuMzg2LTIuMjI1IDEuMTU0LTMuMDctLjE1NC0uNjEzLS4zMDctMS4yMjctLjM4NC0xLjg0MS0xLjYxNSAxLjA3NC0yLjY5MiAyLjkxNi0yLjY5MiA0LjkxMSAwIDMuNDU1IDIuNzY5IDYuMDY0IDYuMjMgNi4wNjQuMjMxIDAgLjU0IDAgLjc3LS4wNzYtLjMwOC0uNTM4LS42OTItMS4wNzUtMS0xLjYxMi0yLjQ2Mi0uMTU0LTQuMDc4LTEuOTk2LTQuMDc4LTQuMzc2TTYyLjc3MSAzNS4wNjJ2Ni45ODVjMCAxLjYxMi0uNTM4IDMuMTQ3LTIuNjE1IDMuMTQ3cy0yLjYxNi0xLjUzNS0yLjYxNi0zLjE0N3YtNi45ODVoLTEuOTIzdjcuMzY5YzAgMi41MzIgMS42MTYgNC40NTEgNC41NCA0LjQ1MXM0LjUzNy0xLjkxOSA0LjUzNy00LjQ1MXYtNy4zNjl6TTY0LjMxIDEzLjQ5NWg1LjIzMXYxLjYxMmgtNy4xNTVWMy41MTdoMS45MjR6TTAgMTkuMjUyaDYuNzd2MS42ODdIMS45MjJ2Mi43NjRoNC43N3YxLjY4OWgtNC43N3YzLjc2aDQuODQ2djEuNjg5SDB6TTM4LjIzMiAxOC42MzhsOCA4LjIxMnYtNy41OThoMS45MjN2MTIuMDVsLTgtOC4wNnY3LjU5OWgtMS45MjN6Ii8+CgkJCTxwYXRoIGQ9Ik04NS45MjYgMTkuMjUyaDEuOTI0VjMwLjg0aC0xLjkyNHpNMTguNjkzIDM2Ljc1djIuNzY0aDQuMTUzdjEuNjEyaC00LjE1M3Y1LjUyNkgxNi43N3YtMTEuNTloNi4yMzF2MS42ODl6TTI2LjM4NiAxMC43MzJoLjA3N2wxLjg0NS03LjIxNGgxLjg0N2wtMy4yMzEgMTIuMDUtNC4wNzctOC42NzMtNC4wNzcgOC42NzMtMy4zMDctMTIuMDVoMS45MjJsMS44NDcgNy4yMTQgMy42MTUtNy40NDV6TTcwLjg0OSAyMy42MjZoLS4wNzdsLTEuODQ3IDcuMjE1SDY3LjA4bDMuMjMxLTEyLjA1IDQuMDc3IDguNzUgNC4wNzgtOC43NSAzLjMwNyAxMi4wNUg3OS44NWwtMS44NDctNy4yMTVoLS4wNzdsLTMuNTM4IDcuNTIyek03MS44NDkgMzkuNDM3bC0xLjg0NyA3LjIxNUg2OC4wOGwzLjIzMS0xMi4wNSA0LjE1NCA4LjY3MyA0LjA3OC04LjY3NCAzLjIzIDEyLjA1aC0xLjkyM2wtMS44NDctNy4yMTQtMy41MzggNy40NDV6TTQ2LjAwMiAzNS4wNjJjMS4wNzYgMCAyLjMwNyAwIDMuMjMuNTM4IDEgLjUzNyAxLjYxNiAxLjY4OCAxLjYxNiAyLjc2MyAwIDEuNjg4LTEuMTU0IDMuMDctMi44NDcgMy4yMjNsMy42OTMgNS4wNjZINDkuNTRMNDYuMDggNDEuNzRINDQuNzd2NC45MTJoLTEuOTIzdi0xMS41OXptLTEuMjMxIDUuMTQzaC44NDZjMS41MzkgMCAzLjM4NS4wNzYgMy4zODUtMS43NjZzLTEuOTI0LTEuNzY1LTMuNDYyLTEuNzY1aC0uNzd6TTUyLjU0IDMuNTE3YzEuMDc3IDAgMi4zMDggMCAzLjIzLjUzOCAxLjAwMS41MzcgMS41NCAxLjY4OCAxLjU0IDIuNzYzIDAgMS42ODktMS4wNzcgMy4wNy0yLjg0NiAzLjIyM2wzLjc2OSA1LjA2NmgtMi4xNTRsLTMuNTM5LTQuOTEyaC0xLjIzdjQuOTEyaC0xLjkyNFYzLjUxN3pNNTEuMzEgOC42NmguODQ2YzEuNTM4IDAgMy4zMDcuMDc3IDMuMzA3LTEuNzY2IDAtMS44NDItMS45MjMtMS43NjQtMy4zODQtMS43NjRoLS43N3pNNzQuODQ5IDEzLjQ5NWgxLjA3N2MyLjUzOCAwIDQuOTIzLS45MjEgNC45MjMtNC4yMjEgMC0zLjM3Ny0yLjM4NS00LjE0NS00LjkyMy00LjE0NWgtMS4wNzd6bS0xLjkyNC05Ljk3N2gzLjE1NGMzLjY5MyAwIDYuNjkzIDEuNzY0IDYuNjkzIDUuNzU2IDAgMy45OS0yLjkyMyA1LjgzMy02LjY5MyA1LjgzM2gtMy4xNTR6TTEwMC41NDIgMjguODQ2Yy0uNjE2LjM4My0xLjMwOC41MzctMi4xNTQuNTM3LTIuNTM5IDAtNC4zMDgtMS45Mi00LjMwOC00LjI5OSAwLTIuMzAyIDEuNTM5LTQuMzc0IDQuMzA4LTQuMzc0Ljg0NiAwIDEuNTM4LjE1MyAyLjE1NC40NmwuOTIzLTEuMzgxYTYuNTE1IDYuNTE1IDAgMDAtMy4wNzctLjc2OGMtMy4zODUgMC02LjIzIDIuNjg3LTYuMjMgNi4wNjMgMCAzLjM3OCAyLjg0NSA1Ljk4NyA2LjIzIDUuOTg3IDEuMTU0IDAgMi4yMy0uMjMgMy4xNTQtLjc2N3pNMTguNzcgMjguODQ2Yy0uNjE2LjM4My0xLjMwOC41MzctMi4wNzcuNTM3LTIuNjE2IDAtNC4zODUtMS45Mi00LjM4NS00LjI5OSAwLTIuMzAyIDEuNTM4LTQuMzc0IDQuMzg1LTQuMzc0Ljc2OSAwIDEuNDYxLjE1MyAyLjA3Ny40NmwxLTEuMzgxYy0uOTIzLS40Ni0yLS43NjgtMy4wNzctLjc2OC0zLjQ2MiAwLTYuMjMgMi42ODctNi4yMyA2LjA2MyAwIDMuMzc4IDIuNzY4IDUuOTg3IDYuMjMgNS45ODcgMS4wNzYgMCAyLjE1NC0uMjMgMy4wNzctLjc2N3pNNjIuNjk0IDI1LjA4NWMwLTIuMzAzLTEuNTM4LTQuMzc1LTQuMzA3LTQuMzc1LTIuODQ2IDAtNC4zODUgMi4wNzItNC4zODUgNC4zNzUgMCAyLjM3OSAxLjc2OSA0LjI5NyA0LjM4NSA0LjI5NyAyLjUzOCAwIDQuMzA3LTEuOTE4IDQuMzA3LTQuMjk3bTEuOTI0IDBjMCAzLjM3Ny0yLjg0NyA1Ljk4Ny02LjIzMSA1Ljk4Ny0zLjQ2MiAwLTYuMjMxLTIuNjEtNi4yMzEtNS45ODdzMi43Ny02LjA2NCA2LjIzLTYuMDY0YzMuMzg1IDAgNi4yMzIgMi42ODYgNi4yMzIgNi4wNjQiIG1hc2s9InVybCgjYikiLz4KCQk8L2c+Cgk8L2c+Cjwvc3ZnPgo="
+        loading="lazy" alt="kuda Microfinance Bank Publications" style="height: auto; width: auto;">
+      <img src="./assets/img/fintech.png" alt="" srcset="">
+      <img
+        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjg1IiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIxMDAwIj4KPHBhdGggZD0iTTU0MS44MTcgMTg0LjIwMWMwIDMwLjk3MS0zOC41NDEgMjkuMTMzLTM4LjU0MSAyOS4xMzNoLTM4LjU0VjE1Ny4zNzFoMzguNTRDNTQyLjkzOSAxNTcuMTA1IDU0MS44MTcgMTg0LjIwMSA1NDEuODE3IDE4NC4yMDFNNDY0LjczNiA3Mi4wMjNoMjkuMzY4YzMwLjQ5NiAxLjYxMSAyOS4zNDUgMjQuMzE2IDI5LjM0NSAyNC4zMTZjMCAyOC4yMTYtMzMuNzIxIDI4LjY3Ni0zMy43MjEgMjguNjc2SDQ2NC43MzZWNzIuMDIzek01MzQuNjg4IDEzNi4wMmMwIDAgMjYuMzgtMTEuMjQxIDI2LjE0NS00MS4wNTdjMCAwIDQuMDEyLTQ4Ljg2NC02MC43MjktNTQuODI0SDQyOC4yNjZ2MjA0Ljg0OWg4Mi4zNDRjMCAwIDY4LjgwMiAwLjIwNSA2OC44MDItNTcuNzk5QzU3OS40MTEgMTg3LjE4OSA1ODEuMDM4IDE0Ny43MTYgNTM0LjY4OCAxMzYuMDJNMzQ4Ljc3MyAwaDMwMi40NTNWMjg1LjAxM0gzNDguNzczVjB6TTE5My4wNDEgMTg0LjIwMWMwIDMwLjk3MS0zOC41NDEgMjkuMTMzLTM4LjU0MSAyOS4xMzNoLTM4LjU0M1YxNTcuMzcxaDM4LjU0M0MxOTQuMTY2IDE1Ny4xMDUgMTkzLjA0MSAxODQuMjAxIDE5My4wNDEgMTg0LjIwMU0xMTUuOTU3IDcyLjAyM2gyOS4zNzRjMzAuNDk3IDEuNjExIDI5LjM0MyAyNC4zMTYgMjkuMzQzIDI0LjMxNmMwIDI4LjIxNi0zMy43MTkgMjguNjc2LTMzLjcxOSAyOC42NzZoLTI0Ljk5OFY3Mi4wMjN6TTE4NS45MTUgMTM2LjAyYzAgMCAyNi4zODQtMTEuMjQxIDI2LjE0Ny00MS4wNTdjMCAwIDQuMDA5LTQ4Ljg2NC02MC43MzItNTQuODI0aC03MS44NDF2MjA0Ljg0OWg4Mi4zNDljMCAwIDY4LjgwMSAwLjIwNSA2OC44MDEtNTcuNzk5QzIzMC42MzkgMTg3LjE4OSAyMzIuMjYgMTQ3LjcxNiAxODUuOTE1IDEzNi4wMk0wIDBoMzAyLjQ1M1YyODUuMDEzSDBWMHpNOTM4LjMwMSA1NC44MjV2MzcuODQ2YzAgMC0zNi45NDItMjIuNzAyLTc3Ljc2NC0yMy4xNTljMCAwLTc2LjE2MS0xLjQ5NS03OS41OTQgNzMuMDA1YzAgMC0yLjc1MSA2OC41MTMgNzguNjc2IDcyLjQxN2MwIDAgMzQuMTY1IDQuMTE1IDgwLjUxNC0yNS40NDF2MzkuMTk1YzAgMC02Mi4xNzMgMzYuOTM5LTEzNC4xOTcgOC40ODhjMCAwLTYwLjU0NS0yMi4xMDktNjIuODUxLTk0LjY1OWMwIDAtMi41MTgtNzQuNjE5IDc4LjIzLTk5LjM4OWMwIDAgMjEuNTYzLTguMjU1IDYwLjMxMy00LjU4NkM4ODEuNjI5IDM4LjU0MSA5MDQuNzg5IDQwLjgzMiA5MzguMzAxIDU0LjgyNU02OTcuNTQ3IDI4NS4wMTNIMTAwMFYwSDY5Ny41NDdWMjg1LjAxM3oiLz48L3N2Zz4K"
+        loading="lazy" alt="kuda Microfinance Bank Publications" style="max-height: 40px;">
+      <img src="./assets/img/cnbc.png" alt="" srcset="">
+      <img src="./assets/img/euro.png" alt="" srcset="">
+    </div>
+    <!-- partner section  -->
+    <div class="partner">
+      <h1>Our Partner</h1>
+      <div class="partner-img">
+        <img src="./assets/img/valar.png" alt="" srcset="">
+        <img src="./assets/img/entreeCapital.png" alt="" srcset="">
+        <img src="./assets/img/sbiHoldings.png" alt="" srcset="">
+        <img src="./assets/img/target.png" alt="" srcset="">
+        <img src="./assets/img/visa.png" alt="" srcset="">
+      </div>
+    </div>
+    <!-- table section  -->
+    <div class="comparison-container" style="margin-top: 4rem;">
+      <table class="comparison-table">
+        <thead class="thread">
+          <tr>
+            <th>Other Banks</th>
+            <th> <img src="./assets/img/kuda_bank.svg"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="bold">Transfer Fee</td>
+            <td><span class="minus"> <i class="fa-solid fa-minus minus-style"></i> Up to ₦50 plus V.A.T.</span></td>
+            <td><span class="minus"> <i class="fa-solid fa-check minus-style"></i>25 free transfers every month</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="bold">Card Delivery</td>
+            <td><span class="minus"> <i class="fa-solid fa-minus minus-style"></i>😟</span></td>
+            <td><span class="minus"> <i class="fa-solid fa-check minus-style"></i>Yes</span></td>
+          </tr>
+          <tr>
+            <td class="bold">Card Maintenance Fee</td>
+            <td><span class="minus"> <i class="fa-solid fa-minus minus-style"> </i>Up to ₦50 per quarter</span></td>
+            <td><span class="minus"> <i class="fa-solid fa-check minus-style"></i>No</span></td>
+          </tr>
+          <tr>
+            <td class="bold">Alerts</td>
+            <td><span class="minus"> <i class="fa-solid fa-minus minus-style"></i>Charge for SMS alerts</span></td>
+            <td><span class="minus"> <i class="fa-solid fa-check minus-style"></i>Free instant notifications</span></td>
+          </tr>
+          <tr>
+            <td class="bold">Annual Interest</td>
+            <td><span class="minus"> <i class="fa-solid fa-minus minus-style"> </i>4%</span></td>
+            <td><span class="minus"> <i class="fa-solid fa-check minus-style"></i>Up to 15%</span></td>
+          </tr>
+          <tr>
+            <td class="bold">Bill Payment Fee</td>
+            <td><span class="minus"> <i class="fa-solid fa-minus minus-style"> </i>Up to ₦100 per bill</span></td>
+            <td><span class="minus"> <i class="fa-solid fa-check minus-style"></i>No</span></td>
+          </tr>
+          <tr>
+            <td class="bold">Instant Reversals</td>
+            <td><span class="minus"> <i class="fa-solid fa-minus minus-style"> </i>😟</span></td>
+            <td><span class="minus"> <i class="fa-solid fa-check minus-style"></i>Yes</span></td>
+          </tr>
+          <tr>
+            <td class="bold">Maintenance</td>
+            <td><span class="minus"> <i class="fa-solid fa-minus minus-style"> </i>Yes</span></td>
+            <td><span class="minus"><i class="fa-solid fa-check minus-style"></i>No</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- more for u  -->
+    <div class="card-section">
+      <div class="three-card-heading">
+        <h2>More for you</h2>
+      </div>
+      <div class="three-card-container">
+        <div class="three-card">
+          <i class="fa-solid fa-location-arrow  card-icon"></i>
+          <div class="title-h">Kuda Business</div>
+          <div class="description-p">Grow your business with our all-in-one business manager. Get a POS, bulk transfers,
+            payroll and more.</div>
+          <a href="#" class="learn-more-text">Learn more &#x276F</a>
+        </div>
+        <div class="three-card">
+          <i class="fa-solid fa-business-time card-icon"></i>
+          <div class="title-h">Transfer & Spend</div>
+          <div class="description-p">Send money for free to any Nigerian account with 25 free transfers every month.
+          </div>
+          <a href="#" class="learn-more-text">Learn more &#x276F</a>
+        </div>
+        <div class="three-card">
+          <i class="fa-solid fa-sack-dollar card-icon"></i>
+          <div class="title-h">Loans</div>
+          <div class="description-p">Get up to ₦150,000 in your Kuda account easily and repay in convenient
+            installments.</div>
+          <a href="#" class="learn-more-text">Learn more &#x276F</a>
+        </div>
+      </div>
+    </div>
+    <!-- last section  -->
+    <div class="money">
+      <div class="joinkuda">
+        <div class="moneyapp">
+          <h1>The money app for <br />africans</h1>
+          <p>Save, spend, send and invest money across borders.</p>
+          <button class="join-kuda">Join us</button>
+        </div>
+        <div class="joinkudaimage">
+          <img src="./assets/img/rotation2.png" alt="" />
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="hr">
+  <footer>
+    <div class="footercontainer">
+      <div class="footer-content">
+        <div class="logocontainer">
+          <img src="./assets/img/kuda_bank.svg" alt="" />
+        </div>
+        <div class="pbcht">
+          <span class="footerheader">Personal</span>
+          <ul>
+            <li><a href="">Discover Personal</a></li>
+            <li><a href="">Transfer & Spend</a></li>
+            <li><a href="">Save</a></li>
+            <li><a href="">Investments</a></li>
+            <li><a href="">Kuda card</a></li>
+          </ul>
+        </div>
+        <div class="pbcht">
+          <span class="footerheader">Business</span>
+          <ul>
+            <li><a href="">Discover Business</a></li>
+            <li><a href="">Business Registration</a></li>
+            <li><a href="">softPOS</a></li>
+            <li><a href="">Invoicing</a></li>
+            <li><a href="">Kuda card</a></li>
+            <li><a href="">Salary Loan</a></li>
+            <li><a href="">Business API</a></li>
+            <li><a href="">Join Kuda Business</a></li>
+          </ul>
+        </div>
+        <div class="pbcht">
+          <span class="footerheader">Company</span>
+          <ul>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Press</a></li>
+            <li><a href="">Join Our Team</a></li>
+            <li><a href="">About Us</a></li>
+          </ul>
+        </div>
+        <div class="pbcht">
+          <span class="footerheader">Help</span>
+          <ul>
+            <li><a href="">Get Help</a></li>
+            <li><a href="">Scam Awareness</a></li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="">Security</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Self Help</a></li>
+          </ul>
+        </div>
+        <div class="pbcht">
+          <span class="footerheader">Transparency</span>
+          <ul>
+            <li><a href="">Terms & Conditions</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Information Security Policy</a></li>
+            <li><a href="">Cookie Policy</a></li>
+            <li><a href="">Whistleblowing Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="appstore">
+        <div class="app">
+          <a href="#" class="appp"><svg href="google.com" width="120" height="40" viewBox="0 0 120 40" fill="none"
+              class="ap">
+              <g clip-path="url(#clip0_app_papaa_plaay)">
+                <path
+                  d="M110.135 -0.000114141H9.53468C9.16798 -0.000114141 8.80568 -0.000114141 8.43995 0.00188586C8.1338 0.00388586 7.83009 0.00969586 7.521 0.0145859C6.84951 0.0224877 6.17961 0.0815621 5.5171 0.191296C4.85552 0.303418 4.21467 0.514802 3.61622 0.818296C3.0185 1.12436 2.47235 1.52205 1.99757 1.99696C1.5203 2.47052 1.12246 3.0179 0.81935 3.61805C0.5154 4.21699 0.304641 4.85882 0.19435 5.52137C0.0830109 6.18307 0.0230984 6.85241 0.01515 7.52337C0.00587 7.82997 0.00489 8.13759 0 8.44423V31.5585C0.00489 31.869 0.00587 32.1698 0.01515 32.4804C0.0231008 33.1513 0.0830134 33.8206 0.19435 34.4823C0.304336 35.1452 0.515108 35.7874 0.81935 36.3866C1.12233 36.9848 1.52022 37.53 1.99757 38.0009C2.47054 38.4779 3.01705 38.8759 3.61622 39.1796C4.21467 39.4839 4.85545 39.6965 5.5171 39.8104C6.17972 39.9192 6.84956 39.9783 7.521 39.9872C7.83009 39.994 8.1338 39.9979 8.43995 39.9979C8.80567 39.9999 9.168 39.9999 9.53468 39.9999H110.135C110.494 39.9999 110.859 39.9999 111.219 39.9979C111.523 39.9979 111.836 39.994 112.141 39.9872C112.811 39.9788 113.479 39.9197 114.141 39.8104C114.804 39.6957 115.448 39.4831 116.049 39.1796C116.647 38.8757 117.193 38.4777 117.666 38.0009C118.142 37.5281 118.541 36.9833 118.848 36.3866C119.15 35.787 119.358 35.1448 119.467 34.4823C119.578 33.8205 119.64 33.1514 119.652 32.4804C119.656 32.1698 119.656 31.869 119.656 31.5585C119.664 31.1952 119.664 30.8339 119.664 30.4647V9.53602C119.664 9.16981 119.664 8.80653 119.656 8.44423C119.656 8.13759 119.656 7.82997 119.652 7.52333C119.64 6.85231 119.578 6.18312 119.467 5.52133C119.358 4.85917 119.149 4.21739 118.848 3.61801C118.23 2.41508 117.252 1.43591 116.049 0.818206C115.448 0.515453 114.804 0.304126 114.141 0.191206C113.48 0.0809886 112.811 0.0218936 112.141 0.0144459C111.836 0.00956586 111.523 0.00370586 111.219 0.00175586C110.859 -0.000244141 110.494 -0.000244141 110.135 -0.000244141V-0.000114141Z"
+                  fill="#A6A6A6"></path>
+                <path
+                  d="M8.44487 39.125C8.14019 39.125 7.84287 39.1211 7.54058 39.1143C6.91436 39.1061 6.2896 39.0516 5.67144 38.9512C5.09503 38.8519 4.53664 38.6673 4.0147 38.4033C3.49754 38.1415 3.02585 37.7983 2.6177 37.3867C2.20364 36.98 1.85891 36.5082 1.59719 35.9902C1.33258 35.4688 1.14945 34.9099 1.05419 34.333C0.951311 33.7131 0.895651 33.0863 0.887687 32.458C0.881347 32.2471 0.873047 31.5449 0.873047 31.5449V8.44434C0.873047 8.44434 0.881887 7.75293 0.887737 7.5498C0.895363 6.92248 0.950699 6.29665 1.05327 5.67773C1.14871 5.09925 1.33197 4.53875 1.59673 4.01563C1.85749 3.49794 2.2003 3.02586 2.61187 2.61768C3.02297 2.20562 3.49617 1.8606 4.01421 1.59521C4.53495 1.33209 5.09228 1.14873 5.66753 1.05127C6.28772 0.949836 6.91465 0.894996 7.54304 0.88721L8.44536 0.875H111.214L112.127 0.8877C112.75 0.895099 113.371 0.94945 113.985 1.05029C114.566 1.14898 115.13 1.33362 115.656 1.59814C116.694 2.13299 117.539 2.97916 118.071 4.01807C118.332 4.53758 118.512 5.09351 118.607 5.66699C118.71 6.29099 118.768 6.92174 118.78 7.5542C118.783 7.8374 118.783 8.1416 118.783 8.44434C118.791 8.81934 118.791 9.17627 118.791 9.53613V30.4648C118.791 30.8281 118.791 31.1826 118.783 31.54C118.783 31.8652 118.783 32.1631 118.779 32.4697C118.768 33.0909 118.711 33.7104 118.608 34.3232C118.515 34.9043 118.333 35.4675 118.068 35.9932C117.805 36.5056 117.462 36.9733 117.053 37.3789C116.644 37.7927 116.172 38.1379 115.653 38.4014C115.128 38.6674 114.566 38.8527 113.985 38.9512C113.367 39.0522 112.742 39.1067 112.116 39.1143C111.823 39.1211 111.517 39.125 111.219 39.125L110.135 39.127L8.44487 39.125Z"
+                  fill="black"></path>
+                <path
+                  d="M24.769 20.3006C24.7797 19.4659 25.0014 18.6475 25.4135 17.9216C25.8255 17.1956 26.4145 16.5857 27.1256 16.1485C26.6738 15.5034 26.0779 14.9724 25.385 14.5979C24.6922 14.2233 23.9216 14.0155 23.1344 13.9908C21.4552 13.8146 19.8272 14.9957 18.9715 14.9957C18.0992 14.9957 16.7817 14.0083 15.363 14.0375C14.4453 14.0672 13.551 14.334 12.7671 14.8121C11.9832 15.2901 11.3365 15.9631 10.8901 16.7654C8.95607 20.1138 10.3987 25.0349 12.2513 27.7415C13.1782 29.0668 14.2615 30.5473 15.6789 30.4948C17.066 30.4372 17.584 29.6103 19.2583 29.6103C20.9171 29.6103 21.4031 30.4948 22.8493 30.4614C24.3377 30.4372 25.2754 29.1302 26.1698 27.7923C26.8358 26.8479 27.3483 25.8042 27.6882 24.6997C26.8235 24.334 26.0856 23.7218 25.5665 22.9395C25.0474 22.1572 24.77 21.2394 24.769 20.3006Z"
+                  fill="white"></path>
+                <path
+                  d="M22.0373 12.2108C22.8489 11.2366 23.2487 9.98445 23.1518 8.72021C21.912 8.85044 20.7668 9.44299 19.9443 10.3798C19.5421 10.8375 19.2341 11.3699 19.0379 11.9467C18.8416 12.5235 18.761 13.1333 18.8006 13.7412C19.4207 13.7476 20.0342 13.6132 20.5949 13.3481C21.1555 13.083 21.6487 12.6942 22.0373 12.2108Z"
+                  fill="white"></path>
+                <path
+                  d="M42.3025 27.1397H37.5691L36.4324 30.4961H34.4275L38.9109 18.0781H40.9939L45.4773 30.4961H43.4382L42.3025 27.1397ZM38.0593 25.5908H41.8113L39.9617 20.1436H39.91L38.0593 25.5908Z"
+                  fill="white"></path>
+                <path
+                  d="M55.1599 25.9697C55.1599 28.7832 53.6541 30.5908 51.3816 30.5908C50.806 30.6209 50.2335 30.4883 49.7297 30.2082C49.2259 29.928 48.8112 29.5117 48.533 29.0068H48.49V33.4912H46.6316V21.4423H48.4305V22.9482H48.4646C48.7556 22.4457 49.1773 22.0316 49.6849 21.7497C50.1926 21.4679 50.7671 21.3289 51.3474 21.3476C53.6453 21.3476 55.1599 23.164 55.1599 25.9697ZM53.2498 25.9697C53.2498 24.1367 52.3025 22.9316 50.8572 22.9316C49.4373 22.9316 48.4822 24.1621 48.4822 25.9697C48.4822 27.7939 49.4373 29.0156 50.8572 29.0156C52.3025 29.0156 53.2498 27.8193 53.2498 25.9697Z"
+                  fill="white"></path>
+                <path
+                  d="M65.1248 25.9697C65.1248 28.7832 63.6189 30.5908 61.3465 30.5908C60.7708 30.6209 60.1983 30.4883 59.6945 30.2081C59.1907 29.928 58.776 29.5117 58.4978 29.0068H58.4548V33.4912H56.5964V21.4423H58.3953V22.9482H58.4294C58.7204 22.4457 59.1421 22.0315 59.6498 21.7497C60.1574 21.4679 60.7319 21.3289 61.3123 21.3476C63.6101 21.3476 65.1248 23.164 65.1248 25.9697ZM63.2146 25.9697C63.2146 24.1367 62.2674 22.9316 60.822 22.9316C59.4021 22.9316 58.447 24.1621 58.447 25.9697C58.447 27.7939 59.4021 29.0156 60.822 29.0156C62.2674 29.0156 63.2146 27.8193 63.2146 25.9697H63.2146Z"
+                  fill="white"></path>
+                <path
+                  d="M71.7107 27.0362C71.8484 28.2676 73.0447 29.0762 74.6795 29.0762C76.2459 29.0762 77.3728 28.2676 77.3728 27.1572C77.3728 26.1934 76.6931 25.6162 75.0838 25.2207L73.4744 24.833C71.1941 24.2822 70.1355 23.2158 70.1355 21.4854C70.1355 19.3428 72.0027 17.8711 74.6541 17.8711C77.2781 17.8711 79.0769 19.3428 79.1375 21.4854H77.2615C77.1492 20.2461 76.1248 19.4981 74.6277 19.4981C73.1306 19.4981 72.1062 20.2549 72.1062 21.3565C72.1062 22.2344 72.7605 22.751 74.3611 23.1465L75.7292 23.4824C78.2771 24.0849 79.3357 25.1084 79.3357 26.9248C79.3357 29.248 77.4851 30.7031 74.5417 30.7031C71.7878 30.7031 69.9285 29.2822 69.8083 27.0361L71.7107 27.0362Z"
+                  fill="white"></path>
+                <path
+                  d="M83.3464 19.2998V21.4424H85.0681V22.9141H83.3464V27.9053C83.3464 28.6807 83.6912 29.042 84.448 29.042C84.6524 29.0384 84.8564 29.0241 85.0593 28.999V30.4619C84.719 30.5255 84.3732 30.5543 84.0271 30.5478C82.1941 30.5478 81.4792 29.8593 81.4792 28.1035V22.9141H80.1628V21.4424H81.4792V19.2998H83.3464Z"
+                  fill="white"></path>
+                <path
+                  d="M86.0652 25.9697C86.0652 23.1211 87.7429 21.3311 90.3591 21.3311C92.9841 21.3311 94.6541 23.1211 94.6541 25.9697C94.6541 28.8262 92.9929 30.6084 90.3591 30.6084C87.7263 30.6084 86.0652 28.8262 86.0652 25.9697ZM92.7605 25.9697C92.7605 24.0156 91.865 22.8623 90.3591 22.8623C88.8533 22.8623 87.9587 24.0244 87.9587 25.9697C87.9587 27.9316 88.8533 29.0762 90.3591 29.0762C91.865 29.0762 92.7605 27.9316 92.7605 25.9697H92.7605Z"
+                  fill="white"></path>
+                <path
+                  d="M96.1863 21.4425H97.9587V22.9835H98.0017C98.1217 22.5022 98.4036 22.0769 98.8002 21.779C99.1968 21.4811 99.6838 21.3288 100.179 21.3478C100.394 21.347 100.607 21.3703 100.816 21.4171V23.1554C100.546 23.0728 100.264 23.0348 99.9812 23.0431C99.7112 23.0321 99.4421 23.0797 99.1922 23.1826C98.9424 23.2855 98.7178 23.4412 98.5338 23.6391C98.3498 23.837 98.2108 24.0724 98.1264 24.3291C98.042 24.5857 98.0141 24.8576 98.0447 25.1261V30.4962H96.1863L96.1863 21.4425Z"
+                  fill="white"></path>
+                <path
+                  d="M109.385 27.8369C109.135 29.4805 107.534 30.6084 105.486 30.6084C102.852 30.6084 101.218 28.8437 101.218 26.0127C101.218 23.1729 102.861 21.3311 105.408 21.3311C107.913 21.3311 109.488 23.0518 109.488 25.7969V26.4336H103.094V26.5459C103.064 26.8791 103.106 27.2148 103.216 27.5306C103.326 27.8464 103.502 28.1352 103.733 28.3778C103.963 28.6203 104.242 28.8111 104.552 28.9374C104.862 29.0637 105.195 29.1226 105.529 29.1103C105.968 29.1515 106.409 29.0498 106.786 28.8203C107.162 28.5909 107.455 28.246 107.62 27.8369L109.385 27.8369ZM103.102 25.1348H107.629C107.645 24.8352 107.6 24.5354 107.495 24.2541C107.391 23.9729 107.229 23.7164 107.02 23.5006C106.812 23.2849 106.561 23.1145 106.284 23.0003C106.006 22.8861 105.708 22.8305 105.408 22.8369C105.105 22.8351 104.805 22.8933 104.525 23.008C104.245 23.1227 103.991 23.2918 103.776 23.5054C103.562 23.7191 103.392 23.973 103.276 24.2527C103.161 24.5323 103.102 24.8321 103.102 25.1348V25.1348Z"
+                  fill="white"></path>
+                <path
+                  d="M37.8262 8.73065C38.2158 8.70269 38.6067 8.76155 38.9709 8.90298C39.335 9.04441 39.6632 9.26489 39.9317 9.54852C40.2003 9.83214 40.4026 10.1718 40.524 10.5431C40.6454 10.9144 40.6829 11.308 40.6338 11.6955C40.6338 13.6017 39.6035 14.6975 37.8262 14.6975H35.6709V8.73065H37.8262ZM36.5976 13.8536H37.7226C38.0011 13.8703 38.2797 13.8246 38.5382 13.72C38.7967 13.6154 39.0287 13.4545 39.2172 13.2489C39.4057 13.0433 39.546 12.7983 39.6278 12.5317C39.7097 12.2651 39.7311 11.9836 39.6904 11.7076C39.7281 11.4328 39.7046 11.153 39.6215 10.8884C39.5383 10.6237 39.3977 10.3807 39.2096 10.1768C39.0216 9.97285 38.7907 9.81304 38.5337 9.70881C38.2766 9.60457 37.9996 9.55849 37.7226 9.57386H36.5976V13.8536Z"
+                  fill="white"></path>
+                <path
+                  d="M41.6807 12.444C41.6524 12.1481 41.6862 11.8496 41.7801 11.5675C41.8739 11.2854 42.0257 11.0261 42.2256 10.8061C42.4256 10.5861 42.6693 10.4103 42.9411 10.2901C43.213 10.1698 43.507 10.1077 43.8042 10.1077C44.1015 10.1077 44.3955 10.1698 44.6673 10.2901C44.9392 10.4103 45.1829 10.5861 45.3828 10.8061C45.5828 11.0261 45.7345 11.2854 45.8284 11.5675C45.9222 11.8496 45.9561 12.1481 45.9278 12.444C45.9566 12.7403 45.9232 13.0392 45.8296 13.3218C45.736 13.6043 45.5843 13.8641 45.3843 14.0845C45.1843 14.3049 44.9404 14.4811 44.6683 14.6016C44.3962 14.7221 44.1019 14.7844 43.8042 14.7844C43.5066 14.7844 43.2123 14.7221 42.9402 14.6016C42.668 14.4811 42.4241 14.3049 42.2241 14.0845C42.0242 13.8641 41.8725 13.6043 41.7789 13.3218C41.6853 13.0392 41.6519 12.7403 41.6807 12.444ZM45.0137 12.444C45.0137 11.468 44.5752 10.8972 43.8057 10.8972C43.0332 10.8972 42.5987 11.468 42.5987 12.4441C42.5987 13.4279 43.0333 13.9943 43.8057 13.9943C44.5752 13.9943 45.0137 13.424 45.0137 12.444H45.0137Z"
+                  fill="white"></path>
+                <path
+                  d="M51.5732 14.6975H50.6514L49.7207 11.3811H49.6504L48.7236 14.6975H47.8105L46.5693 10.1946H47.4707L48.2773 13.6306H48.3438L49.2695 10.1946H50.1221L51.0479 13.6306H51.1182L51.9209 10.1946H52.8096L51.5732 14.6975Z"
+                  fill="white"></path>
+                <path
+                  d="M53.8535 10.1946H54.709V10.91H54.7754C54.888 10.653 55.0781 10.4377 55.3189 10.2939C55.5598 10.15 55.8395 10.085 56.1191 10.1077C56.3382 10.0912 56.5582 10.1243 56.7628 10.2044C56.9674 10.2845 57.1514 10.4096 57.3011 10.5704C57.4508 10.7313 57.5623 10.9237 57.6275 11.1335C57.6927 11.3434 57.7099 11.5652 57.6777 11.7825V14.6975H56.7891V12.0057C56.7891 11.282 56.4746 10.9222 55.8174 10.9222C55.6686 10.9152 55.5201 10.9406 55.3821 10.9964C55.244 11.0522 55.1197 11.1372 55.0175 11.2456C54.9154 11.354 54.8379 11.4832 54.7904 11.6243C54.7429 11.7655 54.7264 11.9152 54.7422 12.0633V14.6976H53.8535L53.8535 10.1946Z"
+                  fill="white"></path>
+                <path d="M59.0938 8.43677H59.9824V14.6975H59.0938V8.43677Z" fill="white"></path>
+                <path
+                  d="M61.2178 12.4441C61.1895 12.1482 61.2234 11.8496 61.3172 11.5675C61.4111 11.2854 61.5629 11.0261 61.7628 10.8061C61.9628 10.5861 62.2065 10.4104 62.4784 10.2901C62.7503 10.1698 63.0443 10.1077 63.3416 10.1077C63.6389 10.1077 63.9329 10.1698 64.2047 10.2901C64.4766 10.4104 64.7203 10.5861 64.9203 10.8061C65.1203 11.0261 65.272 11.2854 65.3659 11.5675C65.4598 11.8496 65.4936 12.1482 65.4653 12.4441C65.4942 12.7404 65.4607 13.0393 65.3671 13.3219C65.2734 13.6044 65.1217 13.8642 64.9217 14.0846C64.7217 14.305 64.4778 14.4811 64.2057 14.6017C63.9335 14.7222 63.6392 14.7845 63.3416 14.7845C63.0439 14.7845 62.7496 14.7222 62.4775 14.6017C62.2053 14.4811 61.9614 14.305 61.7614 14.0846C61.5614 13.8642 61.4097 13.6044 61.3161 13.3219C61.2225 13.0393 61.189 12.7404 61.2178 12.4441ZM64.5508 12.4441C64.5508 11.4681 64.1123 10.8973 63.3428 10.8973C62.5703 10.8973 62.1358 11.4681 62.1358 12.4441C62.1358 13.428 62.5704 13.9944 63.3428 13.9944C64.1123 13.9944 64.5508 13.4241 64.5508 12.4441H64.5508Z"
+                  fill="white"></path>
+                <path
+                  d="M66.4009 13.4241C66.4009 12.6135 67.0044 12.1462 68.0757 12.0798L69.2954 12.0095V11.6208C69.2954 11.1453 68.981 10.8767 68.3735 10.8767C67.8774 10.8767 67.5337 11.0588 67.4351 11.3772H66.5747C66.6655 10.6038 67.3931 10.1077 68.4146 10.1077C69.5435 10.1077 70.1802 10.6697 70.1802 11.6208V14.6975H69.3247V14.0647H69.2544C69.1117 14.2917 68.9113 14.4767 68.6737 14.6009C68.436 14.7252 68.1697 14.7841 67.9019 14.7717C67.7128 14.7914 67.5218 14.7712 67.341 14.7125C67.1602 14.6538 66.9938 14.5579 66.8524 14.4309C66.711 14.3039 66.5977 14.1487 66.52 13.9753C66.4422 13.8019 66.4016 13.6141 66.4009 13.4241ZM69.2954 13.0393V12.6628L68.1958 12.7331C67.5757 12.7746 67.2944 12.9856 67.2944 13.3826C67.2944 13.7878 67.646 14.0237 68.1294 14.0237C68.2711 14.038 68.4142 14.0237 68.5502 13.9816C68.6862 13.9395 68.8123 13.8705 68.9211 13.7787C69.0299 13.6868 69.1191 13.574 69.1834 13.447C69.2477 13.32 69.2858 13.1813 69.2954 13.0393Z"
+                  fill="white"></path>
+                <path
+                  d="M71.3481 12.4441C71.3481 11.0213 72.0796 10.1199 73.2173 10.1199C73.4987 10.1069 73.778 10.1743 74.0225 10.3142C74.267 10.4541 74.4667 10.6607 74.5981 10.9099H74.6646V8.43677H75.5532V14.6975H74.7017V13.9861H74.6314C74.4897 14.2336 74.2831 14.4376 74.0339 14.5761C73.7846 14.7146 73.5022 14.7822 73.2173 14.7717C72.0718 14.7718 71.3481 13.8704 71.3481 12.4441ZM72.2661 12.4441C72.2661 13.3992 72.7163 13.9739 73.4693 13.9739C74.2183 13.9739 74.6812 13.3909 74.6812 12.448C74.6812 11.5095 74.2134 10.9182 73.4693 10.9182C72.7212 10.9182 72.2661 11.4968 72.2661 12.4441H72.2661Z"
+                  fill="white"></path>
+                <path
+                  d="M79.23 12.444C79.2017 12.1481 79.2356 11.8496 79.3294 11.5675C79.4232 11.2854 79.575 11.0261 79.7749 10.8061C79.9749 10.5861 80.2186 10.4103 80.4904 10.2901C80.7623 10.1698 81.0563 10.1077 81.3536 10.1077C81.6508 10.1077 81.9448 10.1698 82.2167 10.2901C82.4885 10.4103 82.7322 10.5861 82.9322 10.8061C83.1321 11.0261 83.2839 11.2854 83.3777 11.5675C83.4715 11.8496 83.5054 12.1481 83.4771 12.444C83.5059 12.7403 83.4725 13.0392 83.3789 13.3218C83.2853 13.6043 83.1336 13.8641 82.9336 14.0845C82.7336 14.3049 82.4897 14.4811 82.2176 14.6016C81.9455 14.7221 81.6512 14.7844 81.3536 14.7844C81.0559 14.7844 80.7616 14.7221 80.4895 14.6016C80.2173 14.4811 79.9735 14.3049 79.7735 14.0845C79.5735 13.8641 79.4218 13.6043 79.3282 13.3218C79.2346 13.0392 79.2012 12.7403 79.23 12.444ZM82.563 12.444C82.563 11.468 82.1245 10.8972 81.355 10.8972C80.5826 10.8972 80.148 11.468 80.148 12.4441C80.148 13.4279 80.5826 13.9943 81.355 13.9943C82.1245 13.9943 82.563 13.424 82.563 12.444Z"
+                  fill="white"></path>
+                <path
+                  d="M84.6694 10.1946H85.5249V10.91H85.5913C85.704 10.653 85.894 10.4377 86.1348 10.2939C86.3757 10.15 86.6555 10.085 86.9351 10.1077C87.1542 10.0912 87.3742 10.1243 87.5788 10.2044C87.7834 10.2845 87.9673 10.4096 88.117 10.5704C88.2667 10.7313 88.3783 10.9237 88.4435 11.1335C88.5087 11.3434 88.5258 11.5652 88.4937 11.7825V14.6975H87.605V12.0057C87.605 11.282 87.2905 10.9222 86.6333 10.9222C86.4846 10.9152 86.336 10.9406 86.198 10.9964C86.0599 11.0522 85.9356 11.1372 85.8335 11.2456C85.7313 11.354 85.6539 11.4832 85.6063 11.6243C85.5588 11.7655 85.5423 11.9152 85.5581 12.0633V14.6976H84.6694V10.1946Z"
+                  fill="white"></path>
+                <path
+                  d="M93.5151 9.07349V10.2151H94.4907V10.9636H93.5151V13.2791C93.5151 13.7507 93.7095 13.9573 94.1519 13.9573C94.2651 13.9569 94.3783 13.9501 94.4907 13.9368V14.677C94.3311 14.7055 94.1694 14.7207 94.0073 14.7224C93.019 14.7224 92.6255 14.3747 92.6255 13.5066V10.9636H91.9106V10.215H92.6255V9.07349H93.5151Z"
+                  fill="white"></path>
+                <path
+                  d="M95.7046 8.43677H96.5854V10.9182H96.6558C96.7739 10.6589 96.9691 10.4423 97.2148 10.298C97.4605 10.1536 97.7447 10.0885 98.0288 10.1116C98.2467 10.0997 98.4646 10.1361 98.6669 10.2181C98.8692 10.3002 99.0508 10.4259 99.199 10.5862C99.3471 10.7465 99.458 10.9376 99.5238 11.1457C99.5896 11.3539 99.6086 11.5739 99.5795 11.7903V14.6975H98.69V12.0095C98.69 11.2903 98.355 10.926 97.7271 10.926C97.5743 10.9135 97.4207 10.9345 97.2769 10.9875C97.1332 11.0406 97.0027 11.1244 96.8947 11.2332C96.7867 11.3419 96.7038 11.4729 96.6517 11.6171C96.5997 11.7612 96.5797 11.915 96.5933 12.0676V14.6975H95.7046L95.7046 8.43677Z"
+                  fill="white"></path>
+                <path
+                  d="M104.761 13.4818C104.64 13.8933 104.379 14.2493 104.022 14.4874C103.665 14.7256 103.236 14.8307 102.81 14.7845C102.513 14.7923 102.218 14.7355 101.946 14.618C101.673 14.5004 101.43 14.325 101.232 14.1039C101.034 13.8827 100.887 13.6212 100.8 13.3374C100.713 13.0535 100.689 12.7543 100.73 12.4603C100.69 12.1654 100.715 11.8655 100.801 11.5808C100.888 11.2961 101.034 11.0334 101.231 10.8103C101.428 10.5872 101.671 10.409 101.942 10.2878C102.214 10.1666 102.509 10.1052 102.806 10.1077C104.059 10.1077 104.815 10.9637 104.815 12.3777V12.6878H101.635V12.7376C101.621 12.9029 101.642 13.0692 101.696 13.226C101.75 13.3827 101.837 13.5264 101.949 13.6479C102.062 13.7693 102.199 13.8658 102.352 13.9312C102.504 13.9966 102.669 14.0295 102.834 14.0276C103.047 14.0532 103.262 14.0149 103.453 13.9177C103.644 13.8205 103.801 13.6687 103.906 13.4817L104.761 13.4818ZM101.635 12.0306H103.91C103.921 11.8795 103.9 11.7277 103.849 11.5849C103.798 11.4422 103.718 11.3117 103.614 11.2019C103.509 11.092 103.383 11.0052 103.243 10.9471C103.103 10.8889 102.953 10.8606 102.801 10.8641C102.647 10.8622 102.495 10.891 102.353 10.949C102.21 11.0069 102.081 11.0928 101.972 11.2015C101.864 11.3102 101.778 11.4396 101.72 11.582C101.662 11.7244 101.633 11.8769 101.635 12.0306H101.635Z"
+                  fill="white"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_app_papaa_plaay">
+                  <rect width="119.664" height="40" fill="white"></rect>
+                </clipPath>
+              </defs>
+            </svg></a>
+          <a href="" class="appp">
+            <svg width="135" height="40" viewBox="0 0 135 40" fill="none" class="ap">
+              <path
+                d="M130 0H5C2.23858 0 0 2.23858 0 5V35C0 37.7614 2.23858 40 5 40H130C132.761 40 135 37.7614 135 35V5C135 2.23858 132.761 0 130 0Z"
+                fill="black"></path>
+              <path
+                d="M130 0.8C131.114 0.8 132.182 1.2425 132.97 2.03015C133.758 2.8178 134.2 3.88609 134.2 5V35C134.2 36.1139 133.758 37.1822 132.97 37.9698C132.182 38.7575 131.114 39.2 130 39.2H5C3.88609 39.2 2.8178 38.7575 2.03015 37.9698C1.2425 37.1822 0.8 36.1139 0.8 35V5C0.8 3.88609 1.2425 2.8178 2.03015 2.03015C2.8178 1.2425 3.88609 0.8 5 0.8H130ZM130 0H5C3.67392 0 2.40215 0.526784 1.46447 1.46447C0.526784 2.40215 0 3.67392 0 5L0 35C0 36.3261 0.526784 37.5979 1.46447 38.5355C2.40215 39.4732 3.67392 40 5 40H130C131.326 40 132.598 39.4732 133.536 38.5355C134.473 37.5979 135 36.3261 135 35V5C135 3.67392 134.473 2.40215 133.536 1.46447C132.598 0.526784 131.326 0 130 0V0Z"
+                fill="#A6A6A6"></path>
+              <path
+                d="M47.4201 10.24C47.4365 10.6067 47.3785 10.973 47.2496 11.3167C47.1208 11.6604 46.9236 11.9745 46.6701 12.24C46.386 12.5333 46.0432 12.7633 45.6641 12.9149C45.285 13.0666 44.8781 13.1364 44.4701 13.12C44.0598 13.1291 43.6519 13.054 43.2718 12.8992C42.8916 12.7444 42.5473 12.5132 42.2601 12.22C41.9638 11.9325 41.7301 11.5869 41.5735 11.2049C41.4169 10.8229 41.3409 10.4127 41.3501 9.99997C41.3395 9.58557 41.4149 9.17346 41.5715 8.78964C41.7281 8.40583 41.9626 8.05864 42.2601 7.76997C42.7056 7.33466 43.2698 7.04071 43.8819 6.92506C44.4939 6.80942 45.1265 6.87723 45.7001 7.11997C46.0607 7.26821 46.3823 7.49746 46.6401 7.78997L46.1101 8.31997C45.9115 8.08075 45.6599 7.89111 45.3752 7.76613C45.0905 7.64114 44.7806 7.58425 44.4701 7.59997C44.1578 7.59844 43.8483 7.66 43.5603 7.78096C43.2723 7.90193 43.0117 8.0798 42.7941 8.30391C42.5766 8.52803 42.4065 8.79378 42.2941 9.08522C42.1817 9.37666 42.1293 9.6878 42.1401 9.99997C42.1336 10.4661 42.2652 10.9237 42.5184 11.3151C42.7717 11.7065 43.1352 12.0142 43.563 12.1992C43.9909 12.3843 44.464 12.4385 44.9227 12.355C45.3813 12.2715 45.8049 12.054 46.1401 11.73C46.4485 11.396 46.6291 10.964 46.6501 10.51H44.4701V9.78997H47.3801C47.4025 9.93903 47.4158 10.0893 47.4201 10.24Z"
+                fill="white" stroke="white" stroke-width="0.2" stroke-miterlimit="10"></path>
+              <path d="M52 7.74H49.3V9.64H51.76V10.36H49.3V12.26H52V13H48.52V7H52V7.74Z" fill="white" stroke="white"
+                stroke-width="0.2" stroke-miterlimit="10"></path>
+              <path d="M55.2801 13H54.5101V7.74H52.8301V7H57.0001V7.74H55.2801V13Z" fill="white" stroke="white"
+                stroke-width="0.2" stroke-miterlimit="10"></path>
+              <path d="M59.9399 13V7H60.7099V13H59.9399Z" fill="white" stroke="white" stroke-width="0.2"
+                stroke-miterlimit="10"></path>
+              <path d="M64.1299 13H63.3599V7.74H61.6799V7H65.7999V7.74H64.1299V13Z" fill="white" stroke="white"
+                stroke-width="0.2" stroke-miterlimit="10"></path>
+              <path
+                d="M73.6099 12.2199C73.3211 12.509 72.9781 12.7383 72.6006 12.8947C72.2231 13.0512 71.8185 13.1317 71.4099 13.1317C71.0013 13.1317 70.5967 13.0512 70.2192 12.8947C69.8417 12.7383 69.4987 12.509 69.2099 12.2199C68.919 11.9298 68.6909 11.5831 68.5395 11.2012C68.3881 10.8194 68.3168 10.4105 68.3299 9.9999C68.3168 9.58933 68.3881 9.18044 68.5395 8.79856C68.6909 8.41669 68.919 8.06998 69.2099 7.7799C69.4925 7.4827 69.8343 7.24813 70.2133 7.09138C70.5923 6.93462 70.9999 6.85917 71.4099 6.8699C71.8193 6.86342 72.2257 6.94082 72.604 7.09732C72.9824 7.25382 73.3247 7.48612 73.6099 7.7799C73.8974 8.07239 74.1235 8.41953 74.2746 8.80083C74.4257 9.18212 74.499 9.58984 74.4899 9.9999C74.503 10.4105 74.4317 10.8194 74.2803 11.2012C74.1289 11.5831 73.9008 11.9298 73.6099 12.2199ZM69.7799 11.7199C69.9929 11.9358 70.2467 12.1072 70.5265 12.2242C70.8063 12.3412 71.1066 12.4014 71.4099 12.4014C71.7132 12.4014 72.0135 12.3412 72.2933 12.2242C72.5731 12.1072 72.8269 11.9358 73.0399 11.7199C73.2614 11.4929 73.4349 11.2236 73.55 10.9281C73.6652 10.6326 73.7195 10.3169 73.7099 9.9999C73.7143 9.68005 73.6536 9.36265 73.5316 9.06697C73.4095 8.77129 73.2286 8.50351 72.9999 8.2799C72.7869 8.06402 72.5331 7.89261 72.2533 7.77562C71.9735 7.65862 71.6732 7.59838 71.3699 7.59838C71.0666 7.59838 70.7663 7.65862 70.4865 7.77562C70.2067 7.89261 69.9529 8.06402 69.7399 8.2799C69.5256 8.51014 69.3594 8.78091 69.2512 9.07628C69.143 9.37166 69.095 9.68569 69.1099 9.9999C69.1003 10.3169 69.1546 10.6326 69.2698 10.9281C69.3849 11.2236 69.5584 11.4929 69.7799 11.7199Z"
+                fill="white" stroke="white" stroke-width="0.2" stroke-miterlimit="10"></path>
+              <path d="M75.5801 13V7H76.5101L79.4301 11.67V10.51V7H80.2001V13H79.4001L76.3501 8.11V9.26V13H75.5801Z"
+                fill="white" stroke="white" stroke-width="0.2" stroke-miterlimit="10"></path>
+              <path
+                d="M68.1401 21.7499C67.2976 21.7519 66.4745 22.0037 65.7751 22.4734C65.0756 22.9432 64.5312 23.6098 64.2106 24.3889C63.89 25.1681 63.8076 26.0248 63.9739 26.8508C64.1402 27.6768 64.5477 28.4349 65.1449 29.0292C65.7421 29.6236 66.5021 30.0276 67.3288 30.19C68.1556 30.3524 69.0119 30.2661 69.7896 29.9418C70.5672 29.6175 71.2313 29.07 71.6977 28.3683C72.1642 27.6667 72.4121 26.8425 72.4101 25.9999C72.4183 25.4379 72.3132 24.8799 72.1013 24.3593C71.8893 23.8386 71.5748 23.366 71.1764 22.9694C70.7779 22.5729 70.3038 22.2606 69.7822 22.051C69.2606 21.8415 68.7021 21.7391 68.1401 21.7499ZM68.1401 28.5799C67.6237 28.616 67.1083 28.496 66.6611 28.2353C66.2138 27.9747 65.8553 27.5855 65.6321 27.1184C65.409 26.6512 65.3315 26.1278 65.4098 25.6161C65.4881 25.1043 65.7185 24.628 66.0711 24.249C66.4237 23.8699 66.8821 23.6057 67.3869 23.4907C67.8916 23.3757 68.4193 23.4152 68.9013 23.604C69.3833 23.7929 69.7973 24.1223 70.0896 24.5496C70.3819 24.9769 70.5388 25.4822 70.5401 25.9999C70.5562 26.3279 70.5065 26.6559 70.3938 26.9643C70.2812 27.2728 70.1079 27.5556 69.8842 27.7961C69.6606 28.0366 69.391 28.2298 69.0914 28.3644C68.7919 28.499 68.4684 28.5723 68.1401 28.5799ZM58.8201 21.7499C57.9776 21.7519 57.1545 22.0037 56.4551 22.4734C55.7556 22.9432 55.2112 23.6098 54.8906 24.3889C54.57 25.1681 54.4876 26.0248 54.6539 26.8508C54.8202 27.6768 55.2277 28.4349 55.8249 29.0292C56.4221 29.6236 57.1821 30.0276 58.0088 30.19C58.8356 30.3524 59.6919 30.2661 60.4696 29.9418C61.2472 29.6175 61.9113 29.07 62.3777 28.3683C62.8442 27.6667 63.0921 26.8425 63.0901 25.9999C63.0983 25.4379 62.9932 24.8799 62.7813 24.3593C62.5693 23.8386 62.2548 23.366 61.8564 22.9694C61.4579 22.5729 60.9838 22.2606 60.4622 22.051C59.9406 21.8415 59.3821 21.7391 58.8201 21.7499ZM58.8201 28.5799C58.3037 28.616 57.7883 28.496 57.3411 28.2353C56.8938 27.9747 56.5353 27.5855 56.3121 27.1184C56.089 26.6512 56.0115 26.1278 56.0898 25.6161C56.1681 25.1043 56.3985 24.628 56.7511 24.249C57.1037 23.8699 57.5621 23.6057 58.0669 23.4907C58.5716 23.3757 59.0993 23.4152 59.5813 23.604C60.0633 23.7929 60.4773 24.1223 60.7696 24.5496C61.0619 24.9769 61.2188 25.4822 61.2201 25.9999C61.2362 26.3279 61.1865 26.6559 61.0738 26.9643C60.9612 27.2728 60.7879 27.5556 60.5642 27.7961C60.3406 28.0366 60.071 28.2298 59.7714 28.3644C59.4719 28.499 59.1484 28.5723 58.8201 28.5799ZM47.7401 23.0599V24.8599H52.0601C51.9924 25.7077 51.6399 26.5077 51.0601 27.1299C50.6268 27.5714 50.1056 27.9171 49.5302 28.1444C48.9549 28.3718 48.3382 28.4759 47.7201 28.4499C46.4471 28.4499 45.2262 27.9442 44.326 27.044C43.4258 26.1439 42.9201 24.923 42.9201 23.6499C42.9201 22.3769 43.4258 21.156 44.326 20.2558C45.2262 19.3556 46.4471 18.8499 47.7201 18.8499C48.9405 18.8318 50.119 19.2952 51.0001 20.1399L52.2701 18.8699C51.6741 18.2804 50.9664 17.8158 50.1886 17.5033C49.4107 17.1908 48.5783 17.0366 47.7401 17.0499C46.8511 17.0153 45.9643 17.1605 45.1327 17.4769C44.3012 17.7932 43.5421 18.2742 42.9009 18.8909C42.2596 19.5077 41.7495 20.2475 41.4011 21.0661C41.0527 21.8847 40.873 22.7652 40.873 23.6549C40.873 24.5446 41.0527 25.4251 41.4011 26.2437C41.7495 27.0623 42.2596 27.8022 42.9009 28.4189C43.5421 29.0357 44.3012 29.5166 45.1327 29.833C45.9643 30.1493 46.8511 30.2945 47.7401 30.2599C48.5955 30.2941 49.4485 30.1469 50.243 29.8281C51.0375 29.5092 51.7556 29.0259 52.3501 28.4099C53.4002 27.2563 53.9598 25.7391 53.9101 24.1799C53.9137 23.8046 53.8836 23.4298 53.8201 23.0599H47.7401ZM93.0501 24.4599C92.7893 23.6927 92.3016 23.0227 91.6516 22.5388C91.0016 22.0548 90.2199 21.7797 89.4101 21.7499C88.8631 21.7489 88.3217 21.86 87.8193 22.0765C87.317 22.2929 86.8644 22.6101 86.4895 23.0085C86.1146 23.4068 85.8254 23.8778 85.6397 24.3923C85.4541 24.9068 85.3759 25.454 85.4101 25.9999C85.4016 26.9128 85.6885 27.8039 86.2282 28.5402C86.7679 29.2765 87.5313 29.8184 88.4044 30.0851C89.2774 30.3517 90.2134 30.3288 91.0723 30.0196C91.9313 29.7105 92.6672 29.1318 93.1701 28.3699L91.7201 27.3699C91.5039 27.7302 91.1974 28.0277 90.8307 28.2329C90.4641 28.4382 90.0502 28.544 89.6301 28.5399C89.1967 28.5578 88.768 28.4442 88.4003 28.214C88.0327 27.9837 87.7432 27.6477 87.5701 27.2499L93.2601 24.8999L93.0501 24.4599ZM87.2501 25.8799C87.2298 25.5698 87.2718 25.2588 87.3736 24.9651C87.4753 24.6715 87.6348 24.4012 87.8426 24.1701C88.0504 23.939 88.3023 23.7518 88.5835 23.6195C88.8647 23.4873 89.1696 23.4126 89.4801 23.3999C89.8012 23.3794 90.1213 23.4537 90.4005 23.6138C90.6796 23.7738 90.9056 24.0124 91.0501 24.2999L87.2501 25.8799ZM82.6301 29.9999H84.5001V17.4999H82.6301V29.9999ZM79.5701 22.6999H79.5001C79.2162 22.3909 78.8694 22.1462 78.483 21.9823C78.0966 21.8185 77.6796 21.7392 77.2601 21.7499C76.1673 21.8029 75.1367 22.2743 74.3821 23.0665C73.6274 23.8587 73.2064 24.9108 73.2064 26.0049C73.2064 27.099 73.6274 28.1512 74.3821 28.9433C75.1367 29.7355 76.1673 30.2069 77.2601 30.2599C77.6841 30.2684 78.1047 30.1832 78.4919 30.0103C78.8791 29.8375 79.2234 29.5812 79.5001 29.2599H79.5701V29.8699C79.5701 31.4999 78.7001 32.3699 77.3001 32.3699C76.8324 32.3596 76.3783 32.2106 75.9955 31.9418C75.6127 31.6729 75.3185 31.2964 75.1501 30.8599L73.5301 31.5299C73.8296 32.2822 74.3504 32.9258 75.0235 33.3758C75.6966 33.8257 76.4905 34.0608 77.3001 34.0499C79.4901 34.0499 81.3001 32.7599 81.3001 29.6199V21.9999H79.5701V22.6999ZM77.4201 28.5799C76.7649 28.5391 76.1499 28.25 75.7004 27.7716C75.2509 27.2932 75.0006 26.6614 75.0006 26.0049C75.0006 25.3485 75.2509 24.7167 75.7004 24.2383C76.1499 23.7598 76.7649 23.4708 77.4201 23.4299C77.7403 23.4437 78.0545 23.5218 78.344 23.6596C78.6334 23.7973 78.8922 23.9918 79.1049 24.2316C79.3176 24.4714 79.4799 24.7515 79.5822 25.0553C79.6844 25.3591 79.7245 25.6803 79.7001 25.9999C79.7274 26.3206 79.6893 26.6435 79.5883 26.9491C79.4872 27.2546 79.3252 27.5365 79.1121 27.7777C78.8989 28.0189 78.6391 28.2143 78.3483 28.3522C78.0575 28.4901 77.7417 28.5676 77.4201 28.5799ZM101.81 17.4999H97.3301V29.9999H99.2001V25.2599H101.81C102.343 25.2982 102.878 25.2263 103.382 25.0486C103.886 24.871 104.348 24.5915 104.739 24.2274C105.13 23.8634 105.442 23.4227 105.655 22.9328C105.869 22.4428 105.979 21.9142 105.979 21.3799C105.979 20.8456 105.869 20.317 105.655 19.8271C105.442 19.3372 105.13 18.8965 104.739 18.5324C104.348 18.1684 103.886 17.8888 103.382 17.7112C102.878 17.5336 102.343 17.4616 101.81 17.4999ZM101.81 23.4999H99.2001V19.2399H101.85C102.418 19.2399 102.962 19.4654 103.363 19.8667C103.765 20.268 103.99 20.8124 103.99 21.3799C103.99 21.9475 103.765 22.4918 103.363 22.8931C102.962 23.2945 102.418 23.5199 101.85 23.5199L101.81 23.4999ZM113.35 21.7099C112.669 21.6679 111.991 21.8265 111.399 22.1659C110.807 22.5054 110.328 23.0109 110.02 23.6199L111.67 24.3099C111.837 24.0093 112.087 23.7634 112.39 23.6019C112.694 23.4405 113.038 23.3703 113.38 23.3999C113.617 23.3722 113.858 23.392 114.088 23.4582C114.317 23.5245 114.531 23.6358 114.718 23.7856C114.904 23.9355 115.058 24.1209 115.172 24.3311C115.286 24.5413 115.356 24.7721 115.38 25.0099V25.1299C114.779 24.8138 114.109 24.6491 113.43 24.6499C111.65 24.6499 109.83 25.6499 109.83 27.4699C109.848 27.8568 109.943 28.2361 110.11 28.5855C110.277 28.9348 110.513 29.247 110.803 29.5035C111.093 29.7601 111.432 29.9557 111.799 30.0787C112.166 30.2018 112.554 30.2498 112.94 30.2199C113.409 30.2459 113.877 30.1466 114.295 29.9322C114.714 29.7178 115.067 29.3961 115.32 28.9999H115.38V29.9999H117.18V25.1899C117.18 22.9999 115.52 21.7299 113.39 21.7299L113.35 21.7099ZM113.12 28.5599C112.51 28.5599 111.66 28.2499 111.66 27.4999C111.66 26.4999 112.72 26.1599 113.66 26.1599C114.254 26.1453 114.841 26.2903 115.36 26.5799C115.297 27.123 115.04 27.6249 114.635 27.9926C114.231 28.3604 113.707 28.569 113.16 28.5799L113.12 28.5599ZM123.74 21.9999L121.6 27.4199H121.54L119.32 21.9999H117.32L120.65 29.5799L118.75 33.7899H120.75L125.82 21.9999H123.74ZM106.94 29.9999H108.8V17.4999H106.94V29.9999Z"
+                fill="white"></path>
+              <path
+                d="M10.4399 7.53997C10.1212 7.93403 9.96391 8.43441 9.99994 8.93997V31.06C9.96591 31.5704 10.1348 32.0735 10.4699 32.46L10.5399 32.54L22.8999 20.15V19.85L10.5099 7.46997L10.4399 7.53997Z"
+                fill="url(#paint0_linear_app_goog_lld)"></path>
+              <path
+                d="M26.9999 24.28L22.8999 20.15V19.85L26.9999 15.72L27.0899 15.78L31.9999 18.56C33.3999 19.35 33.3999 20.65 31.9999 21.45L27.1099 24.23L26.9999 24.28Z"
+                fill="url(#paint1_linear_app_goog_lld)"></path>
+              <path
+                d="M27.1199 24.23L22.8999 20L10.4399 32.46C10.7225 32.7115 11.0842 32.8562 11.4623 32.869C11.8404 32.8818 12.211 32.7619 12.5099 32.53L27.1199 24.23Z"
+                fill="url(#paint2_linear_app_goog_lld)"></path>
+              <path
+                d="M27.1199 15.78L12.5099 7.47997C12.213 7.24488 11.8426 7.12203 11.464 7.133C11.0854 7.14397 10.7228 7.28808 10.4399 7.53997L22.8999 20L27.1199 15.78Z"
+                fill="url(#paint3_linear_app_goog_lld)"></path>
+              <path opacity="0.2"
+                d="M26.9999 24.1299L12.5099 32.3799C12.2219 32.5973 11.8708 32.7149 11.5099 32.7149C11.1491 32.7149 10.798 32.5973 10.5099 32.3799L10.4399 32.4499L10.5099 32.5299C10.798 32.7473 11.1491 32.8649 11.5099 32.8649C11.8708 32.8649 12.2219 32.7473 12.5099 32.5299L27.1199 24.2299L26.9999 24.1299Z"
+                fill="black"></path>
+              <path opacity="0.12"
+                d="M10.4399 32.3199C10.1187 31.9233 9.96126 31.4188 9.99988 30.9099V31.0599C9.96585 31.5703 10.1348 32.0735 10.4699 32.4599L10.5399 32.3899L10.4399 32.3199Z"
+                fill="black"></path>
+              <path opacity="0.12"
+                d="M32 21.3L27 24.13L27.09 24.23L32 21.44C32.2898 21.3174 32.5413 21.119 32.7278 20.8656C32.9143 20.6122 33.0291 20.3132 33.06 20C32.9975 20.2846 32.869 20.5505 32.6849 20.7763C32.5007 21.0021 32.2662 21.1815 32 21.3Z"
+                fill="black"></path>
+              <path opacity="0.25"
+                d="M12.51 7.61998L32 18.7C32.2662 18.8185 32.5007 18.9979 32.6849 19.2237C32.869 19.4495 32.9975 19.7154 33.06 20C33.0291 19.6868 32.9143 19.3878 32.7278 19.1344C32.5413 18.881 32.2898 18.6825 32 18.56L12.51 7.47998C11.12 6.67998 10 7.33998 10 8.93998V9.08998C10 7.48998 11.12 6.82998 12.51 7.61998Z"
+                fill="white"></path>
+              <defs>
+                <linearGradient id="paint0_linear_app_goog_lld" x1="21.7999" y1="8.70997" x2="5.01993" y2="25.49"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#00A0FF"></stop>
+                  <stop offset="0.01" stop-color="#00A1FF"></stop>
+                  <stop offset="0.26" stop-color="#00BEFF"></stop>
+                  <stop offset="0.51" stop-color="#00D2FF"></stop>
+                  <stop offset="0.76" stop-color="#00DFFF"></stop>
+                  <stop offset="1" stop-color="#00E3FF"></stop>
+                </linearGradient>
+                <linearGradient id="paint1_linear_app_goog_lld" x1="33.8299" y1="20" x2="9.6399" y2="20"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFE000"></stop>
+                  <stop offset="0.41" stop-color="#FFBD00"></stop>
+                  <stop offset="0.78" stop-color="#FFA500"></stop>
+                  <stop offset="1" stop-color="#FF9C00"></stop>
+                </linearGradient>
+                <linearGradient id="paint2_linear_app_goog_lld" x1="24.8299" y1="22.3" x2="2.06994" y2="45.05"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FF3A44"></stop>
+                  <stop offset="1" stop-color="#C31162"></stop>
+                </linearGradient>
+                <linearGradient id="paint3_linear_app_goog_lld" x1="7.29994" y1="0.179969" x2="17.4599" y2="10.34"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#32A071"></stop>
+                  <stop offset="0.07" stop-color="#2DA771"></stop>
+                  <stop offset="0.48" stop-color="#15CF74"></stop>
+                  <stop offset="0.8" stop-color="#06E775"></stop>
+                  <stop offset="1" stop-color="#00F076"></stop>
+                </linearGradient>
+              </defs>
+            </svg></a>
+            <a href="#">
+              <svg class="available" width="130" height="40" viewBox="0 0 130 40" fill="none"><path d="M0 5C0 2.23858 2.23858 0 5 0H125C127.761 0 130 2.23858 130 5V35C130 37.7614 127.761 40 125 40H5C2.23858 40 0 37.7614 0 35V5Z" fill="#40196D"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M125 1H5C2.79086 1 1 2.79086 1 5V35C1 37.2091 2.79086 39 5 39H125C127.209 39 129 37.2091 129 35V5C129 2.79086 127.209 1 125 1ZM5 0C2.23858 0 0 2.23858 0 5V35C0 37.7614 2.23858 40 5 40H125C127.761 40 130 37.7614 130 35V5C130 2.23858 127.761 0 125 0H5Z" fill="#DFE3FF"></path><circle cx="20.5" cy="20.5" r="9.5" fill="#DFE3FF"></circle><path d="M24.6797 20.2739H23.0807C23.0637 19.9798 23.0242 19.6874 22.9625 19.3994C22.9016 19.1116 22.8175 18.8292 22.7109 18.5549H24.1993C24.2059 18.5541 24.2126 18.5554 24.2183 18.5587C24.2241 18.5621 24.2286 18.5672 24.2311 18.5733C24.4164 18.9398 24.5466 19.3313 24.6177 19.7355C24.6463 19.8959 24.6659 20.0578 24.6764 20.2204C24.676 20.2271 24.676 20.2338 24.6764 20.2405V20.2739H24.6797Z" fill="#40196D"></path><path d="M24.6793 20.7505C24.6793 20.7781 24.6743 20.8057 24.6718 20.8341C24.6435 21.2373 24.5542 21.6339 24.4068 22.0105C24.3624 22.1258 24.3087 22.2379 24.2601 22.3516C24.2584 22.3567 24.2549 22.3611 24.2503 22.364C24.2457 22.3669 24.2403 22.3681 24.2349 22.3675H22.7709H22.7524C22.8515 22.1016 22.9286 21.8281 22.983 21.5498C23.0373 21.2718 23.0701 20.99 23.0811 20.707H24.6793V20.7505Z" fill="#40196D"></path><path d="M20.9925 16.3193L21.1016 16.3361C21.3632 16.3743 21.6206 16.437 21.8705 16.5233C22.238 16.6501 22.5858 16.828 22.9035 17.0517C23.3117 17.3337 23.6625 17.6903 23.9374 18.1027L23.9508 18.1244H23.9315H22.5295C22.5234 18.1248 22.5173 18.1232 22.5123 18.1197C22.5072 18.1162 22.5036 18.111 22.5018 18.1052C22.3493 17.8037 22.1667 17.5182 21.9568 17.2532C21.7276 16.9685 21.4614 16.7155 21.1653 16.5008C21.1057 16.4565 21.0437 16.4172 20.9833 16.372L20.9666 16.3603L20.9858 16.3461L20.9758 16.3193H20.9925Z" fill="#40196D"></path><path d="M20.6604 18.556H22.1764C22.184 18.5549 22.1918 18.5566 22.1983 18.5607C22.2047 18.5649 22.2095 18.5712 22.2116 18.5786C22.3634 18.9266 22.4729 19.2915 22.5378 19.6655C22.5715 19.8591 22.5942 20.0545 22.6057 20.2507C22.6057 20.2507 22.6057 20.2566 22.6057 20.2607H20.6604V18.556Z" fill="#40196D"></path><path d="M20.6482 22.3662V20.7158H22.596C22.596 20.7518 22.596 20.7869 22.591 20.822C22.5711 21.1325 22.5217 21.4405 22.4434 21.7417C22.3895 21.9482 22.322 22.151 22.2413 22.3487C22.2399 22.3543 22.2365 22.3592 22.2317 22.3624C22.2269 22.3656 22.2211 22.367 22.2153 22.3662H20.6482Z" fill="#40196D"></path><path d="M18.3145 20.2731C18.3203 20.1996 18.3245 20.1277 18.3321 20.0558C18.3504 19.8758 18.3784 19.6969 18.4159 19.5198C18.4827 19.1983 18.5827 18.8845 18.7144 18.5834C18.7161 18.5783 18.7196 18.5739 18.7241 18.571C18.7287 18.5681 18.7342 18.5669 18.7396 18.5676H20.2195V20.2731H18.3145Z" fill="#40196D"></path><path d="M20.2194 22.367H18.7001C18.6925 22.3679 18.6848 22.366 18.6785 22.3617C18.6722 22.3574 18.6676 22.351 18.6657 22.3436C18.5362 22.0303 18.4418 21.7036 18.3839 21.3696C18.3469 21.1568 18.3239 20.9417 18.3152 20.7259C18.3152 20.7259 18.3152 20.72 18.3152 20.7158H20.2186V22.367H20.2194Z" fill="#40196D"></path><path d="M18.2039 18.5557C18.1838 18.6108 18.1637 18.6627 18.1452 18.7145C17.9692 19.2067 17.8642 19.7212 17.8333 20.2428C17.8339 20.2457 17.8337 20.2487 17.8328 20.2515C17.8319 20.2543 17.8302 20.2568 17.828 20.2588C17.8258 20.2607 17.8231 20.262 17.8202 20.2626C17.8173 20.2632 17.8143 20.263 17.8115 20.2621H16.3198C16.3198 20.2178 16.3257 20.1785 16.329 20.1325C16.357 19.8228 16.4183 19.517 16.5118 19.2203C16.5817 18.9996 16.668 18.7844 16.7701 18.5766C16.772 18.5708 16.7757 18.5659 16.7807 18.5626C16.7858 18.5592 16.7918 18.5577 16.7978 18.5582H18.2039V18.5557Z" fill="#40196D"></path><path d="M18.1594 22.3672H16.7717C16.764 22.3682 16.7562 22.3664 16.7496 22.3623C16.743 22.3582 16.7381 22.3519 16.7356 22.3446C16.5642 21.9856 16.4437 21.6046 16.3776 21.2126C16.3502 21.0506 16.3311 20.8874 16.3206 20.7235C16.3206 20.7176 16.3206 20.7126 16.3206 20.7051H17.8299C17.8519 21.2729 17.9631 21.8337 18.1594 22.3672Z" fill="#40196D"></path><path d="M20.9666 24.6585L21.0328 24.6126C21.3331 24.4044 21.6066 24.1601 21.847 23.8852C22.122 23.5681 22.3545 23.2168 22.5387 22.8401C22.5424 22.8285 22.5503 22.8186 22.5608 22.8125C22.5713 22.8063 22.5838 22.8042 22.5958 22.8067H24.0002C23.9784 22.8401 23.9592 22.8702 23.939 22.9003C23.8058 23.0936 23.6572 23.2759 23.4946 23.4454C23.2693 23.6803 23.0158 23.8867 22.74 24.0599C22.4613 24.2379 22.162 24.3817 21.8487 24.488C21.5938 24.5751 21.3309 24.6367 21.0638 24.6719L21.0202 24.6786C21.0103 24.6797 21.0003 24.6784 20.991 24.6749C20.9817 24.6714 20.9733 24.6658 20.9666 24.6585Z" fill="#40196D"></path><path d="M19.9433 24.6629C19.9291 24.6645 19.9147 24.6645 19.9005 24.6629C19.1223 24.5546 18.3914 24.2265 17.7942 23.7173C17.4871 23.4575 17.2224 23.1518 17.0094 22.811L17.001 22.7951H18.3199C18.3279 22.7943 18.336 22.7961 18.3429 22.8003C18.3497 22.8046 18.3549 22.811 18.3577 22.8185C18.5061 23.1204 18.6854 23.4062 18.8926 23.6713C19.0739 23.9006 19.2751 24.1135 19.4938 24.3076C19.632 24.4308 19.7782 24.5447 19.9315 24.6487L19.9399 24.6545V24.6629H19.9433Z" fill="#40196D"></path><path d="M19.9188 16.334L19.9389 16.3566L19.8937 16.3875C19.6016 16.594 19.3341 16.833 19.0962 17.0998C18.8239 17.3981 18.5939 17.7323 18.4129 18.0931C18.4103 18.1001 18.4054 18.1061 18.399 18.11C18.3926 18.1139 18.3851 18.1156 18.3776 18.1148H17.0444C17.7538 17.1132 18.7055 16.5121 19.9163 16.3281L19.9188 16.334Z" fill="#40196D"></path><path d="M22.0283 22.8096C21.6889 23.4067 21.2171 23.9186 20.6489 24.3061V22.8096H22.0283Z" fill="#40196D"></path><path d="M18.8955 22.8086H20.2195V24.2759C19.6685 23.8975 19.2149 23.3948 18.8955 22.8086Z" fill="#40196D"></path><path d="M21.9837 18.1122H20.6597V16.7168C21.2026 17.0743 21.6557 17.5518 21.9837 18.1122Z" fill="#40196D"></path><path d="M20.2199 16.7598V18.1251H18.9487C19.2594 17.577 19.6948 17.1093 20.2199 16.7598Z" fill="#40196D"></path><path d="M42.5109 30.5826C41.6869 30.5826 40.9669 30.4066 40.3509 30.0546C39.7429 29.6946 39.2709 29.1866 38.9349 28.5306C38.6069 27.8666 38.4429 27.0866 38.4429 26.1906C38.4429 25.3026 38.6069 24.5306 38.9349 23.8746C39.2629 23.2106 39.7309 22.7026 40.3389 22.3506C40.9549 21.9986 41.6789 21.8226 42.5109 21.8226C43.3429 21.8226 44.0629 21.9986 44.6709 22.3506C45.2869 22.7026 45.7549 23.2106 46.0749 23.8746C46.4029 24.5306 46.5669 25.3026 46.5669 26.1906C46.5669 27.0866 46.4029 27.8666 46.0749 28.5306C45.7469 29.1866 45.2789 29.6946 44.6709 30.0546C44.0629 30.4066 43.3429 30.5826 42.5109 30.5826ZM42.5109 29.3466C43.3029 29.3466 43.9189 29.0746 44.3589 28.5306C44.7989 27.9866 45.0189 27.2066 45.0189 26.1906C45.0189 25.1826 44.7989 24.4106 44.3589 23.8746C43.9189 23.3306 43.3029 23.0586 42.5109 23.0586C41.7189 23.0586 41.1029 23.3266 40.6629 23.8626C40.2229 24.3986 40.0029 25.1746 40.0029 26.1906C40.0029 27.2066 40.2229 27.9866 40.6629 28.5306C41.1029 29.0746 41.7189 29.3466 42.5109 29.3466Z" fill="#DFE3FF"></path><path d="M51.5125 24.2586C52.9605 24.2586 53.6845 25.0906 53.6845 26.7546V30.4746H52.1845V26.8266C52.1845 26.3466 52.0925 25.9986 51.9085 25.7826C51.7245 25.5586 51.4405 25.4466 51.0565 25.4466C50.6005 25.4466 50.2325 25.5946 49.9525 25.8906C49.6725 26.1786 49.5325 26.5626 49.5325 27.0426V30.4746H48.0445V26.1306C48.0445 25.4906 48.0125 24.9186 47.9485 24.4146H49.3525L49.4605 25.4106C49.6685 25.0426 49.9485 24.7586 50.3005 24.5586C50.6605 24.3586 51.0645 24.2586 51.5125 24.2586Z" fill="#DFE3FF"></path><path d="M60.6799 30.4746V23.2026H57.8959V21.9306H65.0359V23.2026H62.2399V30.4746H60.6799Z" fill="#DFE3FF"></path><path d="M69.4656 24.2586C70.9136 24.2586 71.6376 25.0906 71.6376 26.7546V30.4746H70.1376V26.8266C70.1376 26.3466 70.0456 25.9986 69.8616 25.7826C69.6776 25.5586 69.3936 25.4466 69.0096 25.4466C68.5536 25.4466 68.1856 25.5946 67.9056 25.8906C67.6256 26.1786 67.4856 26.5626 67.4856 27.0426V30.4746H65.9976V21.6426H67.4856V25.2906C67.6936 24.9626 67.9696 24.7106 68.3136 24.5346C68.6576 24.3506 69.0416 24.2586 69.4656 24.2586Z" fill="#DFE3FF"></path><path d="M78.5321 27.5226H74.3561C74.3881 28.1706 74.5481 28.6506 74.8361 28.9626C75.1321 29.2666 75.5681 29.4186 76.1441 29.4186C76.8081 29.4186 77.4241 29.2026 77.9921 28.7706L78.4241 29.8026C78.1361 30.0346 77.7801 30.2226 77.3561 30.3666C76.9401 30.5026 76.5161 30.5706 76.0841 30.5706C75.0921 30.5706 74.3121 30.2906 73.7441 29.7306C73.1761 29.1706 72.8921 28.4026 72.8921 27.4266C72.8921 26.8106 73.0161 26.2626 73.2641 25.7826C73.5121 25.3026 73.8601 24.9306 74.3081 24.6666C74.7561 24.3946 75.2641 24.2586 75.8321 24.2586C76.6641 24.2586 77.3201 24.5306 77.8001 25.0746C78.2881 25.6106 78.5321 26.3506 78.5321 27.2946V27.5226ZM75.8681 25.3386C75.4681 25.3386 75.1401 25.4586 74.8841 25.6986C74.6361 25.9306 74.4761 26.2706 74.4041 26.7186H77.2241C77.1761 26.2626 77.0361 25.9186 76.8041 25.6866C76.5801 25.4546 76.2681 25.3386 75.8681 25.3386Z" fill="#DFE3FF"></path><path d="M93.9552 21.9306H95.4432L92.4192 30.4746H91.1592L89.0112 24.3306L86.8392 30.4746H85.5792L82.5672 21.9306H84.1392L86.2752 28.3026L88.4952 21.9306H89.5992L91.7712 28.3506L93.9552 21.9306Z" fill="#DFE3FF"></path><path d="M101.138 27.5226H96.9615C96.9935 28.1706 97.1535 28.6506 97.4415 28.9626C97.7375 29.2666 98.1735 29.4186 98.7495 29.4186C99.4135 29.4186 100.03 29.2026 100.598 28.7706L101.03 29.8026C100.742 30.0346 100.386 30.2226 99.9615 30.3666C99.5455 30.5026 99.1215 30.5706 98.6895 30.5706C97.6975 30.5706 96.9175 30.2906 96.3495 29.7306C95.7815 29.1706 95.4975 28.4026 95.4975 27.4266C95.4975 26.8106 95.6215 26.2626 95.8695 25.7826C96.1175 25.3026 96.4655 24.9306 96.9135 24.6666C97.3615 24.3946 97.8695 24.2586 98.4375 24.2586C99.2695 24.2586 99.9255 24.5306 100.406 25.0746C100.894 25.6106 101.138 26.3506 101.138 27.2946V27.5226ZM98.4735 25.3386C98.0735 25.3386 97.7455 25.4586 97.4895 25.6986C97.2415 25.9306 97.0815 26.2706 97.0095 26.7186H99.8295C99.7815 26.2626 99.6415 25.9186 99.4095 25.6866C99.1855 25.4546 98.8735 25.3386 98.4735 25.3386Z" fill="#DFE3FF"></path><path d="M105.864 24.2586C106.392 24.2586 106.856 24.3906 107.256 24.6546C107.664 24.9106 107.98 25.2746 108.204 25.7466C108.428 26.2186 108.54 26.7666 108.54 27.3906C108.54 28.0146 108.424 28.5706 108.192 29.0586C107.968 29.5386 107.652 29.9106 107.244 30.1746C106.844 30.4386 106.384 30.5706 105.864 30.5706C105.416 30.5706 105.016 30.4746 104.664 30.2826C104.32 30.0906 104.06 29.8226 103.884 29.4786V30.4746H102.408V21.6426H103.896V25.3266C104.08 24.9906 104.344 24.7306 104.688 24.5466C105.032 24.3546 105.424 24.2586 105.864 24.2586ZM105.468 29.3946C105.964 29.3946 106.348 29.2186 106.62 28.8666C106.892 28.5146 107.028 28.0226 107.028 27.3906C107.028 26.7666 106.892 26.2866 106.62 25.9506C106.348 25.6066 105.96 25.4346 105.456 25.4346C104.952 25.4346 104.564 25.6066 104.292 25.9506C104.02 26.2946 103.884 26.7826 103.884 27.4146C103.884 28.0546 104.02 28.5466 104.292 28.8906C104.564 29.2266 104.956 29.3946 105.468 29.3946Z" fill="#DFE3FF"></path><path d="M40.6569 16.0806C40.1649 16.0806 39.7029 16.0146 39.2709 15.8826C38.8449 15.7506 38.4819 15.5616 38.1819 15.3156L38.5779 14.4696C38.8899 14.7036 39.2139 14.8776 39.5499 14.9916C39.8919 15.0996 40.2639 15.1536 40.6659 15.1536C41.1099 15.1536 41.4519 15.0756 41.6919 14.9196C41.9379 14.7636 42.0609 14.5446 42.0609 14.2626C42.0609 14.0226 41.9469 13.8396 41.7189 13.7136C41.4969 13.5816 41.1279 13.4586 40.6119 13.3446C39.8079 13.1706 39.2229 12.9456 38.8569 12.6696C38.4909 12.3936 38.3079 11.9916 38.3079 11.4636C38.3079 11.0856 38.4099 10.7496 38.6139 10.4556C38.8179 10.1616 39.1059 9.93055 39.4779 9.76255C39.8559 9.59455 40.2909 9.51055 40.7829 9.51055C41.2329 9.51055 41.6589 9.57955 42.0609 9.71755C42.4689 9.84955 42.8019 10.0356 43.0599 10.2756L42.6729 11.1216C42.1029 10.6656 41.4729 10.4376 40.7829 10.4376C40.3689 10.4376 40.0419 10.5246 39.8019 10.6986C39.5619 10.8666 39.4419 11.0976 39.4419 11.3916C39.4419 11.6436 39.5469 11.8356 39.7569 11.9676C39.9729 12.0996 40.3389 12.2226 40.8549 12.3366C41.3889 12.4626 41.8239 12.6006 42.1599 12.7506C42.4959 12.8946 42.7539 13.0836 42.9339 13.3176C43.1139 13.5456 43.2039 13.8336 43.2039 14.1816C43.2039 14.5656 43.1019 14.9016 42.8979 15.1896C42.6939 15.4716 42.3999 15.6906 42.0159 15.8466C41.6319 16.0026 41.1789 16.0806 40.6569 16.0806Z" fill="#DFE3FF"></path><path d="M44.1989 15.9996V11.4546H45.3149V15.9996H44.1989ZM44.1269 9.39355H45.3779V10.5006H44.1269V9.39355Z" fill="#DFE3FF"></path><path d="M50.9376 11.4546V15.8556C50.9376 16.5636 50.7426 17.1006 50.3526 17.4666C49.9626 17.8326 49.3896 18.0156 48.6336 18.0156C47.9316 18.0156 47.3136 17.8686 46.7796 17.5746L46.9596 16.7196C47.5116 17.0076 48.0606 17.1516 48.6066 17.1516C49.4166 17.1516 49.8216 16.7496 49.8216 15.9456V15.0456C49.6836 15.2916 49.4826 15.4926 49.2186 15.6486C48.9546 15.7986 48.6576 15.8736 48.3276 15.8736C47.9316 15.8736 47.5776 15.7806 47.2656 15.5946C46.9596 15.4026 46.7196 15.1356 46.5456 14.7936C46.3776 14.4456 46.2936 14.0496 46.2936 13.6056C46.2936 13.1616 46.3776 12.7686 46.5456 12.4266C46.7196 12.0786 46.9596 11.8116 47.2656 11.6256C47.5776 11.4336 47.9316 11.3376 48.3276 11.3376C48.6636 11.3376 48.9606 11.4096 49.2186 11.5536C49.4826 11.6916 49.6836 11.8866 49.8216 12.1386V11.4546H50.9376ZM48.6246 14.9916C48.9966 14.9916 49.2876 14.8686 49.4976 14.6226C49.7136 14.3766 49.8216 14.0376 49.8216 13.6056C49.8216 13.1736 49.7166 12.8346 49.5066 12.5886C49.2966 12.3426 49.0026 12.2196 48.6246 12.2196C48.2526 12.2196 47.9586 12.3426 47.7426 12.5886C47.5326 12.8346 47.4276 13.1736 47.4276 13.6056C47.4276 14.0376 47.5326 14.3766 47.7426 14.6226C47.9586 14.8686 48.2526 14.9916 48.6246 14.9916Z" fill="#DFE3FF"></path><path d="M54.754 11.3376C55.84 11.3376 56.383 11.9616 56.383 13.2096V15.9996H55.258V13.2636C55.258 12.9036 55.189 12.6426 55.051 12.4806C54.913 12.3126 54.7 12.2286 54.412 12.2286C54.07 12.2286 53.794 12.3396 53.584 12.5616C53.374 12.7776 53.269 13.0656 53.269 13.4256V15.9996H52.153V12.7416C52.153 12.2616 52.129 11.8326 52.081 11.4546H53.134L53.215 12.2016C53.371 11.9256 53.581 11.7126 53.845 11.5626C54.115 11.4126 54.418 11.3376 54.754 11.3376Z" fill="#DFE3FF"></path><path d="M60.0456 15.9996V11.4546H61.1616V15.9996H60.0456ZM59.9736 9.39355H61.2246V10.5006H59.9736V9.39355Z" fill="#DFE3FF"></path><path d="M64.9932 11.3376C66.0792 11.3376 66.6222 11.9616 66.6222 13.2096V15.9996H65.4972V13.2636C65.4972 12.9036 65.4282 12.6426 65.2902 12.4806C65.1522 12.3126 64.9392 12.2286 64.6512 12.2286C64.3092 12.2286 64.0332 12.3396 63.8232 12.5616C63.6132 12.7776 63.5082 13.0656 63.5082 13.4256V15.9996H62.3922V12.7416C62.3922 12.2616 62.3682 11.8326 62.3202 11.4546H63.3732L63.4542 12.2016C63.6102 11.9256 63.8202 11.7126 64.0842 11.5626C64.3542 11.4126 64.6572 11.3376 64.9932 11.3376Z" fill="#DFE3FF"></path><path d="M71.7158 12.3006V14.3346C71.7158 14.8686 71.9648 15.1356 72.4628 15.1356C72.6008 15.1356 72.7508 15.1116 72.9128 15.0636V15.9546C72.7148 16.0266 72.4748 16.0626 72.1928 16.0626C71.6768 16.0626 71.2808 15.9186 71.0048 15.6306C70.7288 15.3426 70.5908 14.9286 70.5908 14.3886V12.3006H69.7178V11.4546H70.5908V10.3476L71.7158 9.96955V11.4546H72.9218V12.3006H71.7158Z" fill="#DFE3FF"></path><path d="M75.756 16.0716C75.294 16.0716 74.886 15.9756 74.532 15.7836C74.184 15.5916 73.914 15.3186 73.722 14.9646C73.536 14.6046 73.443 14.1846 73.443 13.7046C73.443 13.2246 73.536 12.8076 73.722 12.4536C73.914 12.0936 74.184 11.8176 74.532 11.6256C74.886 11.4336 75.294 11.3376 75.756 11.3376C76.212 11.3376 76.614 11.4336 76.962 11.6256C77.31 11.8176 77.577 12.0936 77.763 12.4536C77.955 12.8076 78.051 13.2246 78.051 13.7046C78.051 14.1846 77.955 14.6046 77.763 14.9646C77.577 15.3186 77.31 15.5916 76.962 15.7836C76.614 15.9756 76.212 16.0716 75.756 16.0716ZM75.747 15.1896C76.131 15.1896 76.422 15.0666 76.62 14.8206C76.824 14.5686 76.926 14.1966 76.926 13.7046C76.926 13.2186 76.824 12.8496 76.62 12.5976C76.416 12.3396 76.128 12.2106 75.756 12.2106C75.378 12.2106 75.087 12.3396 74.883 12.5976C74.679 12.8496 74.577 13.2186 74.577 13.7046C74.577 14.1966 74.676 14.5686 74.874 14.8206C75.078 15.0666 75.369 15.1896 75.747 15.1896Z" fill="#DFE3FF"></path><path d="M96.0246 16.0142H94.5222L92.6992 13.7405V16.0142H91.4071V9.00271H92.6992V13.2096L94.422 11.006H95.9645L93.9512 13.48L96.0246 16.0142Z" fill="#DFE3FF"></path><path d="M99.3787 11.006H100.671V16.0142H99.3787V15.4533C99.0649 15.9207 98.5674 16.1544 97.8863 16.1544C97.3387 16.1544 96.8846 15.9708 96.524 15.6035C96.1701 15.2362 95.9932 14.7287 95.9932 14.081V11.006H97.2853V13.9207C97.2853 14.2546 97.3754 14.5117 97.5557 14.692C97.736 14.8656 97.9764 14.9524 98.2769 14.9524C98.6108 14.9524 98.8779 14.8489 99.0782 14.6419C99.2785 14.4349 99.3787 14.1244 99.3787 13.7104V11.006Z" fill="#DFE3FF"></path><path d="M105.25 9.00271H106.542V16.0142H105.25V15.4232C104.869 15.9107 104.328 16.1544 103.627 16.1544C102.953 16.1544 102.375 15.9007 101.894 15.3932C101.42 14.879 101.183 14.2513 101.183 13.5101C101.183 12.7689 101.42 12.1445 101.894 11.637C102.375 11.1228 102.953 10.8658 103.627 10.8658C104.328 10.8658 104.869 11.1095 105.25 11.597V9.00271ZM102.866 14.5317C103.133 14.7922 103.467 14.9224 103.868 14.9224C104.268 14.9224 104.599 14.7922 104.859 14.5317C105.12 14.2646 105.25 13.9241 105.25 13.5101C105.25 13.0961 105.12 12.7588 104.859 12.4984C104.599 12.2313 104.268 12.0978 103.868 12.0978C103.467 12.0978 103.133 12.2313 102.866 12.4984C102.605 12.7588 102.475 13.0961 102.475 13.5101C102.475 13.9241 102.605 14.2646 102.866 14.5317Z" fill="#DFE3FF"></path><path d="M111.129 11.006H112.421V16.0142H111.129V15.4232C110.742 15.9107 110.198 16.1544 109.496 16.1544C108.829 16.1544 108.254 15.9007 107.774 15.3932C107.3 14.879 107.063 14.2513 107.063 13.5101C107.063 12.7689 107.3 12.1445 107.774 11.637C108.254 11.1228 108.829 10.8658 109.496 10.8658C110.198 10.8658 110.742 11.1095 111.129 11.597V11.006ZM108.745 14.5317C109.006 14.7922 109.336 14.9224 109.737 14.9224C110.138 14.9224 110.468 14.7922 110.729 14.5317C110.996 14.2646 111.129 13.9241 111.129 13.5101C111.129 13.0961 110.996 12.7588 110.729 12.4984C110.468 12.2313 110.138 12.0978 109.737 12.0978C109.336 12.0978 109.006 12.2313 108.745 12.4984C108.485 12.7588 108.355 13.0961 108.355 13.5101C108.355 13.9241 108.485 14.2646 108.745 14.5317Z" fill="#DFE3FF"></path><path d="M114.545 15.894C114.378 16.0609 114.177 16.1444 113.944 16.1444C113.71 16.1444 113.509 16.0609 113.343 15.894C113.176 15.727 113.092 15.5267 113.092 15.293C113.092 15.0593 113.176 14.8589 113.343 14.692C113.509 14.5251 113.71 14.4416 113.944 14.4416C114.177 14.4416 114.378 14.5251 114.545 14.692C114.711 14.8589 114.795 15.0593 114.795 15.293C114.795 15.5267 114.711 15.727 114.545 15.894Z" fill="#DFE3FF"></path><path d="M86.6744 9H88.2565L85.588 12.5071L88.2565 16.0142H86.6744L84.006 12.5071L86.6744 9Z" fill="#DFE3FF"></path><path d="M84.7684 9H85.8739L83.9678 12.5071L85.8739 16.0142H84.7684L82.8623 12.5071L84.7684 9Z" fill="#DFE3FF"></path><path d="M83.6247 9H84.2537L82.8242 12.5071L84.2537 16.0142H83.6247L82.1952 12.5071L83.6247 9Z" fill="#DFE3FF"></path><path d="M81.7949 9H82.1475V16.0142H81.7949V9Z" fill="#DFE3FF"></path></svg>
+            </a>
+        </div>
+      </div>
+      <div class="footerinfo">
+        <div class="footervary">
+          <span>Products may vary by country or market.</span>
+        </div>
+        <div class="footercontactinfo">
+          <div class="contactinfocol">
+           
+            <span class="footerheader">Contact</span> <br>
+
+            <a href="help@kuda.com">help@kuda.com</a>
+            <div class="icon-container">
+              <div class="icons"><i class="fa-brands fa-x-twitter"></i></div>
+              <div class="icons"><i class="fa-brands fa-instagram"></i></div>
+              <div class="icons"><i class="fa-brands fa-facebook-f"></i></div>
+              <div class="icons"><i class="fa-brands fa-youtube"></i></div>
+              <div class="icons"><i class="fa-solid fa-m"></i></div>
+              <div class="icons"><i class="fa-brands fa-linkedin-in"></i></div>
+            </div>
+          </div>
+          <div class="contactinfocol">
+            <span class="footerheader">Lagos</span>
+            <p>
+              1-11 Commercial Avenue, <br />
+              Yaba, Lagos, <br />
+              Nigeria
+            </p>
+          </div>
+          <div class="contactinfocol">
+            <span class="footerheader">London</span>
+            <p>
+              5 New Street Square, <br />
+              London, EC4A 3TW,<br />
+              United Kingdom
+            </p>
+          </div>
+          <div class="contactinfocol">
+            <span class="footerheader">Cape Town</span>
+            <p>
+              146 Campground Road,<br />
+              Snakepit Building, Level 4, <br />
+              Newlands, Cape Town
+            </p>
+          </div>
+          <div class="contactinfocol">
+            <span class="footerheader">Canada</span>
+            <p>
+              3080 Yonge Street,<br />
+              Suite 6060, Toronto,<br />
+              Ontario M4N 3N1
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="kuda-contitions">
+        <p >
+          *Kuda Customers get 25 free transfer to other banks every month. Extra
+          transfers to other banks cost ₦10 each. <br />**Kuda account holders
+          can deposit money in over 10,000 branches across Nigeria for free.
+        </p>
+        <p style="padding-top: 1rem;">
+          © 2024 Kuda Technologies Ltd (Company No.11472232). All rights
+          reserved.
+        </p>
+        <p style="padding-top: 1rem;">
+          If you would like to find out more about which Kuda entity you receive
+          services from, please reach out to us via the in-app chat in the Kuda
+          app. Nigerian banking services offered by Kuda Microfinance Bank
+          (RC796975) with registered address at 1-11 Commercial Avenue, Yaba,
+          Lagos, Nigeria. Kuda Microfinance Bank is licensed by the Central Bank
+          of Nigeria. Deposits are insured by the Nigerian Deposit Insurance
+          Corporation (NDIC).
+        </p>
+        <p style="padding-top: 1rem;">
+          UK services are offered by Kuda EMI Ltd (Company No. 13724208) with
+          registered address at 5 New Street Square, London, EC4A 3TW, United
+          Kingdom.
+        </p>
+        <p style="padding-top: 1rem;">
+          Canada services will be provided by Kuda Canada Technologies Limited,
+          an Ontario corporation registered under number 1000286176, with its
+          registered address located at 3080 Yonge Street, Suite 6060, Toronto,
+          Ontario M4N 3N1. Kuda Canada Technologies Limited is duly registered
+          with The Financial Transactions and Reports Analysis Centre of Canada
+          (FINTRAC) as a money service business, bearing registration number
+          M23163015.
+        </p>
+      </div>
+        
+      </div>
+  </footer>
+  <script src="./assets/js/app.js"></script>
+  <!-- <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: 'f5a74226-d948-48ba-98e8-e53d2b9b6d1e', f: true }); done = true; } }; })();</script> -->
+</body>
+
+</html>
